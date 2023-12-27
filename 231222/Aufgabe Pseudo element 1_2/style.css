@@ -6,10 +6,12 @@ ul li {
     color:#a020f0;
 
 }
-section p :first-line {
+ h3  {
     color:#32cd32;
 
 }
-section p ::first-letter {
+section p  {
     color: #00bfff;
+    font-size: 15px;
 }
+
