@@ -1,0 +1,15 @@
+body{
+    font-family: Montserrat; 
+    
+}
+ul li {
+    color:#a020f0;
+
+}
+section p :first-line {
+    color:#32cd32;
+
+}
+section p ::first-letter {
+    color: #00bfff;
+}
