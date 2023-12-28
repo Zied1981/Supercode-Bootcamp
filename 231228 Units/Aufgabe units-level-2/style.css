@@ -1,0 +1,37 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+
+h1 {
+    color: white;
+    background-color:rgba(100,100,100,0.3) ;
+    text-align: center;
+    width:600px;
+    margin: 0 auto;
+    padding: 10px 50px 10px 50px;
+    font-size: 2rem;
+}
+
+span {
+    
+}
+
+section {
+    background-image: url(img/foto\ eule.webp );
+    padding-top: 200px;
+
+    
+    background-repeat:no-repeat;
+    background-size: cover;
+    width:100vw;
+    height:100vh;
+
+}
