@@ -1,0 +1,39 @@
+img {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+     }
+
+
+.foto1 {
+
+width:100px;
+
+}
+
+.foto2{
+
+   
+    width: 10%;
+
+} 
+
+.foto3 {
+    width:  20em ;
+  
+
+
+}
+.foto4{
+    width: 40rem;
+}
+
+.foto5 {
+    width: 35vw;
+
+
+
+}
+.foto6{
+    width: 75vh;
+}
