@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background-image: url("../img/848-3840x2160.jpeg");
+  min-height: 100vh;
+  min-width: auto;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(163, 49, 49, 0.366);
+  padding: 2vh 5vh 2vh 5vh;
+}
+
+nav div {
+  display: flex;
+  gap: 5vw;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+}
+
+h1 {
+  color: white;
+}
