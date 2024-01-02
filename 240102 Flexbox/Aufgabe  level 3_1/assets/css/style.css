@@ -4,18 +4,91 @@
   box-sizing: border-box;
 }
 html {
-  background-image: url("../img/ozean.jpeg");
+  font-size: 62.5%;
 }
 
+@font-face {
+  font-family: raleway;
+  src: url("../fonts/Raleway-VariableFont_wght.ttf");
+}
+
+header h1 {
+  color: #666;
+
+  font-family: Raleway;
+  font-size: 24px;
+  font-weight: 300;
+}
 nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   background-color: white;
+  padding: 2vh 12vw 2vh 12vw;
+}
+
+nav div {
+  display: flex;
+  gap: 2vw;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #4c4c4c;
+  font-family: Raleway;
+  cursor: pointer;
+  font-size: 13px;
+}
+main {
+  background: url("../img/ozean.jpeg") no-repeat center;
+  background-size: cover;
+  min-height: 100vh;
+  font-family: Raleway;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+  gap: 2vh;
 }
 
-div a {
+h2 {
+  color: #fff;
+  text-align: center;
+  font-family: Raleway;
+  font-size: clamp(0.1px, 5vw, 60px);
+  font-weight: 400;
+}
+main p {
+  color: #fff;
+  font-family: Raleway;
+  font-size: clamp(0.5px, 2vw, 14px);
+}
+
+.buttons {
   display: flex;
   justify-content: center;
-  align-items: end;
+  align-items: center;
+  gap: 2vw;
+}
+.buttons a {
+  color: #fff;
+  text-align: center;
+  border: 2px solid white;
+  text-decoration: none;
+  padding: 15px 42px 15px 42px;
+  width: 200px;
+  transition: 1s;
+}
+
+.buttons a:nth-of-type(1):hover {
+  background-color: white;
+  color: black;
+}
+
+.buttons a:nth-of-type(2) {
+  background-color: #745cf9;
+}
+
+.buttons a:nth-of-type(2):hover {
+  opacity: 0.5;
 }
