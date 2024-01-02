@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background-color: #d9e8e5;
+  background-size: cover;
+}
+
+@font-face {
+  font-family: lato;
+  src: url("../fonts/Lato-Regular.ttf");
+}
+
+h1 {
+  color: black;
+  font-size: 24px;
+  font-weight: 400;
+}
+header {
+  font-family: lato, sans-serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  min-height: 75px;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 4vw;
+}
+
+header nav a {
+  display: flex;
+  justify-content: space-between;
+}
+.login {
+  display: flex;
+  justify-content: end;
+  align-items: end;
+  gap: 4vw;
+}
