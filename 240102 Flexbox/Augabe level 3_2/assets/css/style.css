@@ -26,6 +26,7 @@ header {
   align-items: center;
   background-color: white;
   min-height: 75px;
+  padding: 10xp 50px;
 }
 
 header nav {
@@ -38,10 +39,12 @@ header nav {
 header nav a {
   display: flex;
   justify-content: space-between;
+  padding-right: 70px;
 }
 .login {
   display: flex;
-  justify-content: end;
-  align-items: end;
   gap: 4vw;
+}
+.login a {
+  margin-left: auto;
 }
