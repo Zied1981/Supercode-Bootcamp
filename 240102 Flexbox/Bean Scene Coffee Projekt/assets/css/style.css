@@ -11,7 +11,6 @@
   font-family: Playfairdisplay;
   src: url(../fonts/PlayfairDisplay-VariableFont_wght.ttf);
 }
-
 header {
   background-image: url(../img/foto1.jpeg);
   background-repeat: no-repeat;
@@ -25,7 +24,6 @@ header h2 {
   font-family: clickerscript, sans serif;
   font-size: 35px;
 }
-
 nav {
   display: flex;
   justify-content: space-around;
@@ -42,16 +40,15 @@ nav {
   align-items: center;
   gap: 4vw;
 }
-
 .nav-links a {
   color: #fff;
-  font-family: Playfair Display, sans-serif;
+  font-family: Playfairdisplay, sans-serif;
   font-size: 14px;
   text-decoration: none;
 }
 .nav-rechts a {
   color: #fff;
-  font-family: Playfair Display, sans-serif;
+  font-family: Playfairdisplay, sans-serif;
   font-size: 14px;
   text-decoration: underline;
 }
@@ -73,7 +70,7 @@ nav {
 }
 .coffee h3 {
   color: #fff;
-  font-family: Playfair Display, sans-serif;
+  font-family: Playfairdisplay, sans-serif;
   font-size: 22px;
   font-weight: 500;
 }
@@ -85,17 +82,16 @@ nav {
 }
 .coffee p {
   color: #fff;
-  font-family: Playfair Display, sans-serif;
+  font-family: Playfairdisplay, sans-serif;
   font-size: 25px;
   width: 600px;
-  margin-bottom: 50px;
+  margin-bottom: 60px;
 }
-
 .btn {
   color: black;
   border-radius: 24px;
   background: #f9c06a;
-  padding: 10px;
+  padding: 14px 26px;
 }
 .discover {
   background-image: url(../img/foto2.jpeg);
@@ -108,7 +104,7 @@ nav {
 }
 .discover h2 {
   color: #603809;
-  font-family: Playfair Display, sans-serif;
+  font-family: Playfairdisplay, sans-serif;
   font-size: 54px;
   font-style: normal;
   font-weight: 700;
@@ -117,7 +113,7 @@ nav {
 }
 .discover p {
   color: #707070;
-  font-family: Playfair Display, sans-serif;
+  font-family: Playfairdisplay, sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
@@ -125,8 +121,178 @@ nav {
   width: 580px;
   margin-bottom: 15px;
 }
+.coffee-blast {
+  margin-bottom: 40px;
+}
+main article {
+  text-align: center;
+}
+main article h3 {
+  color: #603809;
+  font-family: Playfairdisplay, sans-serif;
+  font-size: 54px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-align: center;
+  padding-left: 50px;
+}
+main article p {
+  color: #707070;
+  text-align: center;
+  font-family: Playfairdisplay, sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 34px;
+  margin-bottom: 30px;
+}
+main section img {
+  width: 88px;
+  height: 88px;
+  margin-bottom: 10px;
+}
+.supreme {
+  background-color: #ffeed8;
+  width: 280px;
+  height: 284px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.supreme p {
+  width: 180px;
+  height: 54px;
+}
 
-main img {
-  height: 200px;
-  width: 366px;
+main section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2vw;
+  margin-bottom: 30px;
+}
+main section h4 {
+  color: #603809;
+  font-family: Playfairdisplay, sans-serif;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 10px;
+}
+main section p {
+  color: #707070;
+  text-align: center;
+  font-family: Playfairdisplay, sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.high,
+.extra,
+.price {
+  border: 1px solid rgba(249, 192, 106, 0.42);
+  background-color: #fff9f1;
+  width: 280px;
+  height: 284px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.high p {
+  width: 136px;
+  height: 54px;
+}
+.extra p {
+  width: 177px;
+  height: 54px;
+}
+.price p {
+  width: 192px;
+  height: 54px;
+}
+
+.final {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.final p {
+  color: #707070;
+  text-align: center;
+  font-family: Playfairdisplay, sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.final h5 {
+  color: #603809;
+  font-family: Playfairdisplay, sans-serif;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 20px;
+}
+.final .btn {
+  padding: 10px 20px;
+  margin-bottom: 30px;
+}
+
+footer {
+  background-image: url(../img/kaffeetasse2.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 55vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  opacity: 0.8;
+}
+
+.chance {
+  display: flex;
+  align-items: left;
+  flex-direction: column;
+  padding-top: 80px;
+  margin-left: 50px;
+  padding-left: 20px;
+  gap: 2vw;
+}
+.chance h2 {
+  color: #fff;
+  font-family: Playfairdisplay, sans-serif;
+  font-size: 54px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  width: 575px;
+}
+.chance p {
+  color: #fff;
+  font-family: Playfairdisplay, sans-serif;
+  font-style: normal;
+  font-weight: 409;
+  line-height: 34px;
+  width: 400px;
+}
+footer img {
+  width: 300px;
+  height: 467px;
+  margin: auto;
+  padding-top: 60px;
+}
+footer .btn {
+  text-align: center;
+  max-width: 130px;
 }
