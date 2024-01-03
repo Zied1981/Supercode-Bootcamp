@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: clickerScript;
+  src: url(../fonts/ClickerScript-Regular.ttf);
+}
+@font-face {
+  font-family: Playfairdisplay;
+  src: url(../fonts/PlayfairDisplay-VariableFont_wght.ttf);
+}
+
+header {
+  background-image: url(../img/foto1.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  min-height: 85vh;
+  width: auto;
+}
+header h2 {
+  color: #fff;
+  font-family: clickerscript, sans serif;
+  font-size: 35px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 25px;
+}
+.nav-links {
+  display: flex;
+  gap: 3vw;
+}
+.nav-rechts {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4vw;
+}
+
+.nav-links a {
+  color: #fff;
+  font-family: Playfair Display, sans-serif;
+  font-size: 14px;
+  text-decoration: none;
+}
+.nav-rechts a {
+  color: #fff;
+  font-family: Playfair Display, sans-serif;
+  font-size: 14px;
+  text-decoration: underline;
+}
+.nav-rechts a:nth-of-type(2) {
+  color: #1e1e1e;
+  border-radius: 24px;
+  background: #f9c06a;
+  text-decoration: none;
+  border-radius: 24px;
+  padding: 10px 10px;
+}
+.coffee {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  padding-top: 250px;
+  margin-left: 100px;
+}
+.coffee h3 {
+  color: #fff;
+  font-family: Playfair Display, sans-serif;
+  font-size: 22px;
+  font-weight: 500;
+}
+.coffee h1 {
+  color: #fff;
+  font-family: clickerScript, sans-serif;
+  font-size: 220px;
+  font-weight: 400;
+}
+.coffee p {
+  color: #fff;
+  font-family: Playfair Display, sans-serif;
+  font-size: 25px;
+  width: 600px;
+  margin-bottom: 50px;
+}
+
+.btn {
+  color: black;
+  border-radius: 24px;
+  background: #f9c06a;
+  padding: 10px;
+}
+.discover {
+  background-image: url(../img/foto2.jpeg);
+  background-repeat: no-repeat;
+  background-position: right;
+  height: 50vh;
+  padding-top: 150px;
+  margin-left: 80px;
+  width: 110vw;
+}
+.discover h2 {
+  color: #603809;
+  font-family: Playfair Display, sans-serif;
+  font-size: 54px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 15px;
+}
+.discover p {
+  color: #707070;
+  font-family: Playfair Display, sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 34px;
+  width: 580px;
+  margin-bottom: 15px;
+}
+
+main img {
+  height: 200px;
+  width: 366px;
+}
