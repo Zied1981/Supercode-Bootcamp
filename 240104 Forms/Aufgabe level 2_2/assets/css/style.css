@@ -12,3 +12,7 @@ fieldset {
   margin-right: 10px;
   padding: 0.5rem;
 }
+main input[type="Submit"],
+main input[type="Reset"] {
+  padding: 0 2px 0 2px;
+}
