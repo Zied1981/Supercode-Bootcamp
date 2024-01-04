@@ -1,0 +1,14 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main input[type="email"] {
+  margin-bottom: 5px;
+}
+fieldset {
+  margin-left: 10px;
+  margin-right: 10px;
+  padding: 0.5rem;
+}
