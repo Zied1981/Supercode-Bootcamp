@@ -24,31 +24,28 @@ html {
 /* !header!*/
 
 header {
-  background-image: url(../img/foto1.png);
+  background: url(../img/foto1.png) center no-repeat;
   background-size: cover;
-  background-repeat: no-repeat;
   min-height: 100vh;
-  margin-bottom: 30px;
+
+  margin-bottom: 3vw;
   color: white;
 }
-header img {
-  width: 24px;
-  height: 28px;
-}
+
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 10px;
+  padding: 1vw 2vw;
 }
 header h2 {
   font-family: Alegreya SC, sans-serif;
-  font-size: 36px;
+  font-size: clamp(4rem, 6.5vw, 5rem);
   font-style: normal;
   font-weight: 500;
-  line-height: 39.6px;
-  margin-left: 15px;
-  padding-top: 15px;
+
+  margin-left: 3vw;
+  padding-top: 3vw;
 }
 header article {
   text-align: center;
@@ -56,27 +53,24 @@ header article {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  min-height: 500px;
+  padding-top: 10vw;
 }
 h1 {
   font-family: Nixie One, sans-serif;
-  font-size: 56px;
+  font-size: clamp(0.5rem, 7vw, 9rem);
   font-style: normal;
   font-weight: 400;
-  line-height: 56px;
 }
 header p {
   color: rgba(255, 255, 255, 0.5);
   font-family: Alegreya SC, sans-serif;
-  font-size: 14px;
   font-style: normal;
   font-weight: 400;
-  line-height: 22.4px;
 }
 /* !main!*/
 .gallerie-sec {
-  margin: 60px 135px;
-  padding: 0 30px;
+  margin: 2vw 4.5vw;
+  padding: 3vw 4.5vw;
 }
 
 .latest-works {
@@ -87,81 +81,135 @@ header p {
 .latest-works h2 {
   color: #3a4f52;
   font-family: Alegreya Sans, sans-serif;
-  font-size: 36px;
+  font-size: clamp(0.5rem, 5vw, 6rem);
   font-style: normal;
   font-weight: 500;
-  line-height: 39.6px;
 }
 .latest-works p {
   color: #6a6a6a;
   font-family: Helvetica Neue, sans-serif;
-  font-size: 14px;
-  font-style: normal;
+  font-size: clamp(3rem, 7vw, 8rem);
   font-weight: 400;
-  line-height: 20px;
+  padding: 2vw 4vw;
 }
 .btn-view-all {
   color: #3a4f52;
   text-align: center;
   font-family: Helvetica Neue, sans-serif;
-  font-size: 18px;
-  font-style: normal;
+  font-size: clamp(0.3rem, 1vw, 2rem);
   font-weight: 400;
-  line-height: 24px;
   text-decoration: none;
   border: 1px solid black;
-  padding: 5px 5px;
+  padding: 1vw 1vw;
 }
 .gallerie-img-container img {
-  width: 100%;
-  height: 100%;
+  width: 26vw;
+  height: 16vw;
 }
+
 .gallerie-img-top {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  gap: 30px;
-  margin: 30px 153px;
+  gap: 1vw;
+  margin-bottom: 1vw;
+  /* !padding?? */
 }
 .gallerie-img-down {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  gap: 30px;
-  margin: 30px 153px;
-}
-.our-services {
-  background-image: url("../img/our\ services.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  min-height: 100vh;
-}
-.our-services article {
-  text-align: center;
+  gap: 1vw;
+  margin-bottom: 3vw;
+  /* !padding?? */
 }
 
-.our-services article h4 {
+/* ! folie 3 */
+.our-services {
+  background: url("../img/our\ services.png") center no-repeat;
+
+  background-size: cover;
+  padding: 5vw 10vw;
+}
+
+.container {
+  background: rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2vw;
+  padding: 5vw 3vw;
+}
+
+.container h4 {
   color: #fff;
-  font-family: Alegreya Sans;
-  font-size: 36px;
-  font-style: normal;
+  font-family: Alegreya Sans, sans-serif;
+  font-size: clamp(0.1rem, 3.5vw, 3.6rem);
   font-weight: 500;
-  line-height: 39.6px;
-  padding-top: 100px;
-  margin-bottom: 10px;
+  align-items: center;
 }
-.our-services article p {
- color: #fff;
-margin-bottom: 60px;
-font-family: Helvetica Neue,sans-serif;
-  font-size: 14px;
-  font-style: normal;
+.container p {
+  color: #fff;
+  font-family: Helvetica Neue, sans-serif;
+  font-size: clamp(0.1rem, 1.5vw, 1.4rem);
   font-weight: 400;
-  line-height: 20px;
+  align-items: center;
 }
-/*  
-.concepts .colors .illustration {
+
+.s-box {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.s-box div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2vw;
+}
+
+.s-box h4 {
+  font-size: clamp(0.1rem, 2.5vw, 3rem);
+}
+/* !folie 4 */
+
+.ftbg {
+  margin: 2vw 3vw;
+  padding: 2vw 4vw;
+}
+
+.ftbg-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+.ftbg-header h2 {
+  color: #3a4f52;
+  font-family: Alegreya Sans, sans-serif;
+  font-size: clamp(0.5rem, 5vw, 6rem);
+  font-style: normal;
+  font-weight: 500;
+}
+.ftbg-header p {
+  color: #6a6a6a;
+  font-family: Helvetica Neue, sans-serif;
+  font-size: clamp(0.1rem, 1vw, 8rem);
+  font-weight: 400;
+  padding: 2vw 1vw;
+}
+.ftbg-sec {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  gap: 2vw;
+}
+.ftbg-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1vw;
 }
