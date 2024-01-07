@@ -87,6 +87,9 @@ nav {
   width: 600px;
   margin-bottom: 60px;
 }
+.coffee .btn {
+  margin-bottom: 1.5vw;
+}
 .btn {
   color: black;
   border-radius: 24px;
@@ -98,9 +101,8 @@ nav {
   background-repeat: no-repeat;
   background-position: right;
   height: 50vh;
-  padding-top: 150px;
-  margin-left: 80px;
-  width: 110vw;
+  padding: 7vw 2vw;
+  margin: 1vw 2vw;
 }
 .discover h2 {
   color: #603809;
@@ -119,7 +121,7 @@ nav {
   font-weight: 400;
   line-height: 34px;
   width: 580px;
-  margin-bottom: 15px;
+  margin-bottom: 25px;
 }
 .coffee-blast {
   margin-bottom: 40px;
