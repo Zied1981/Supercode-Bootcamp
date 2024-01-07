@@ -213,3 +213,181 @@ header p {
   flex-direction: column;
   gap: 1vw;
 }
+.ftbg-container h4 {
+  color: #3a4f52;
+  font-family: Alegreya Sans, sans-serif;
+  font-size: clamp(0.5rem, 3vw, 4rem);
+  font-weight: 500;
+}
+.ftbg-container p {
+  color: #6a6a6a;
+  font-family: Helvetica Neue, sans-serif;
+  font-size: clamp(0.1rem, 1vw, 3rem);
+}
+
+.ftbg-container a {
+  color: #4da7ca;
+  font-family: Helvetica Neue, sans-serif;
+  font-size: clammp(0.1rem, 1vw, 2rem);
+  text-decoration: none;
+  font-weight: 400;
+}
+/* ! folie 5 */
+.getafquote {
+  background: url(../img/getafquote.png) center no-repeat;
+  background-size: cover;
+  min-height: 35vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.getafquote-main {
+  background-color: rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  width: 80vw;
+  height: 20vw;
+  padding: 3vw 1vw;
+}
+
+.getafquote-main h2 {
+  color: #fff;
+  font-family: Alegreya Sans, sans-serif;
+  font-size: clamp(0.5rem, 2vw, 4rem);
+  font-weight: 500;
+  padding: 3vw 0;
+}
+.getafquote-main a {
+  color: #fff;
+  font-family: Helvetica Neue, sans-serif;
+  font-size: clamp(0.5rem, 1vw, 2rem);
+  font-weight: 400;
+  text-decoration: none;
+  border: 1px solid #fff;
+  padding: 1vw 1.5vw;
+}
+/* !folie 6 */
+
+.testimo-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 5vw 0 2vw 0;
+}
+.testimo-header h2 {
+  color: #3a4f52;
+  font-family: Alegreya Sans, sans-serif;
+  font-size: clamp(0.5rem, 3vw, 4rem);
+  font-weight: 500;
+}
+.testimo p {
+  color: #6a6a6a;
+  font-family: Helvetica Neue, sans-serif;
+  font-size: clamp(0.3rem, 1vw, 1.5rem);
+  font-weight: 400;
+}
+.testimo-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2vw 1vw;
+  gap: 3vw;
+}
+.testimo-main .leader {
+  flex-direction: column;
+}
+.leader img {
+  width: 14vw;
+  height: 14vw;
+  padding: 2vw;
+}
+.leader {
+  width: 25vw;
+  margin-bottom: 5vw;
+}
+.leader p:nth-of-type(1) {
+  margin-bottom: 1vw;
+}
+
+.leader p:nth-of-type(2) {
+  font-weight: 700;
+  padding: 0.3vw 0;
+}
+/* ! last Folie */
+.contact-us {
+  background: url(../img/footer.png) center no-repeat;
+  background-size: cover;
+  height: 30vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  padding: 0.5vw 6vw;
+}
+.footer-line {
+  background-color: rgba(0, 0, 0, 0.2);
+  width: 80vw;
+  height: 27vw;
+}
+.footer-line h2 {
+  color: #fff;
+  font-family: Alegreya Sans, sans-serif;
+  font-size: clamp(1rem, 2.7vw, 3.6rem);
+  font-weight: 500;
+  padding: 1.5vw 0 1.5vw 0;
+}
+.footer-line p {
+  color: #fff;
+  font-family: Helvetica Neue, sans-serif;
+  font-size: clamp(0.5rem, 1vw, 1.5rem);
+  font-weight: 400;
+  padding-bottom: 2vw;
+}
+form {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1vw;
+  padding: 0 20vw;
+}
+form input {
+  border: 1px solid white;
+  background-color: transparent;
+  color: white;
+}
+input,
+input::placeholder,
+.copyright p {
+  color: #fff;
+
+  font-family: Helvetica Neue, sans-serif;
+  font-size: clamp(0.3rem, 1vw, 1.4rem);
+  font-weight: 400;
+}
+input[type="submit"] {
+  border: 0.1vw solid white;
+  padding: 1vw 1vw;
+  align-self: center;
+}
+input[type="email"],
+input[type="text"] {
+  padding: 0.5vw 0 0.5vw 1vw;
+}
+input[type="textarea"] {
+  padding: 1.5vw 0 2vw 1vw;
+  text-align: left;
+}
+footer .copyright {
+  background: #2b3e51;
+  height: 9vw;
+}
+
+.copyright p {
+  text-align: left;
+  padding: 3vw 0 2vw 10vw;
+}
