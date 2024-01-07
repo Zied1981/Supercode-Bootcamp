@@ -204,7 +204,7 @@ header p {
 .ftbg-sec {
   display: flex;
   justify-content: center;
-  align-items: center;
+
   text-align: left;
   gap: 2vw;
 }
