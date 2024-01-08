@@ -1,0 +1,35 @@
+main {
+  background-color: gray;
+  height: 80vw;
+  width: 80vw;
+}
+.kreis {
+  background-color: red;
+  height: 10vh;
+  width: 10vw;
+  border-radius: 50%;
+  animation: kreis 3s ease-in-out infinite normal;
+}
+
+@keyframes kreis {
+  0%,
+  100% {
+    background-color: red;
+  }
+  25% {
+    background-color: yellow;
+    transform: translateX(100%);
+  }
+
+  50% {
+    background-color: green;
+    transform: translate(100%, 100%);
+  }
+  75% {
+    background-color: blue;
+    transform: translateY(100%);
+  }
+}
+.kreis:hover {
+  animation-play-state: paused;
+}
