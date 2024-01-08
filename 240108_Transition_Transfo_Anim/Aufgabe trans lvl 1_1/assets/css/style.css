@@ -1,0 +1,12 @@
+.container {
+  height: 50vh;
+}
+.container div {
+  background-color: red;
+  height: 20vh;
+  width: 20vw;
+  transition: 5s;
+}
+.container div:hover {
+  width: 100vw;
+}

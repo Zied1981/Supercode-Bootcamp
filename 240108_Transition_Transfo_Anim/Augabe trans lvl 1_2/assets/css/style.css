@@ -1,0 +1,26 @@
+.container {
+  height: 50vh;
+  background-color: lightgray;
+  position: relative;
+}
+
+.rot {
+  background: red;
+  width: 10vw;
+  height: 10vh;
+  transition: left 3s 0s ease-in-out;
+  position: absolute;
+  left: 0;
+}
+.grün {
+  background: green;
+  width: 10vw;
+  height: 10vh;
+  transition: left 2s 1s ease-in-out;
+  position: absolute;
+  margin-top: 40vh;
+  left: 0;
+}
+.container:hover div {
+  left: 90%;
+}
