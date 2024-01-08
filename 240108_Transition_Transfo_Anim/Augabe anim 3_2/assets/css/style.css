@@ -1,0 +1,69 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+Main {
+  background-color: white;
+  height: 100vh;
+}
+
+section {
+  background-color: rgb(181, 163, 163);
+  height: 90vw;
+  width: 90vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1vw;
+}
+
+section div:nth-of-type(1) {
+  background-color: green;
+  width: 5vw;
+  height: 5vh;
+  animation: load 2s ease-in-out infinite 0s;
+}
+div:nth-of-type(2) {
+  background-color: purple;
+  width: 5vw;
+  height: 5vh;
+  animation: load 2s ease-in-out infinite 0.2s;
+}
+
+div:nth-of-type(3) {
+  background-color: yellow;
+  width: 5vw;
+  height: 5vh;
+  animation: load 2s ease-in-out infinite 0.4s;
+}
+
+div:nth-of-type(4) {
+  background-color: rgb(250, 88, 115);
+  width: 5vw;
+  height: 5vh;
+  animation: load 2s ease-in-out infinite 0.6s;
+}
+
+div:nth-of-type(5) {
+  background-color: rgb(127, 82, 140);
+  width: 5vw;
+  height: 5vh;
+  animation: load 2s ease-in-out infinite 0.8s;
+}
+
+@keyframes load {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+
+  33% {
+    transform: translateY(45px);
+  }
+
+  55% {
+    transform: translateY(45px);
+  }
+}

@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(32, 27, 27);
+}
+div {
+  height: 80vh;
+}
+div img {
+  border-radius: 100%;
+  height: 50%;
+  width: 80%;
+}
+
+@keyframes bayern {
+  0%,
+  100% {
+    box-shadow: 20px 20px 100px rgb(27, 27, 241),
+      -30px -30px 100px rgb(217, 213, 213);
+  }
+
+  50% {
+    box-shadow: 20px -20px 100px rgb(244, 11, 11),
+      -30px 30px 100px rgb(21, 187, 242);
+  }
+}
+div img:hover {
+  animation: bayern 2s ease-in-out infinite normal;
+}
