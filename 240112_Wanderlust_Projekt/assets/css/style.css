@@ -419,3 +419,6 @@ img {
     text-align: center;
   }
 }
+.cont-links {
+  display: contents;
+}
