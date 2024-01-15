@@ -22,6 +22,7 @@ html {
 img {
   max-width: 100%;
 }
+/* !header */
 
 .header {
   background: url(../img/home_hero.png) center no-repeat;
@@ -62,7 +63,7 @@ img {
   background: #fff;
   padding: 0.5vw 3vw;
 }
-
+/* !pickupline */
 .pickupline {
   text-align: center;
 }
@@ -76,6 +77,7 @@ img {
   line-height: 47px;
   padding-top: 3vw;
 }
+/* !preis */
 .preis-section {
   min-height: 60vh;
 }
@@ -116,6 +118,7 @@ img {
   font-weight: 400;
   line-height: 22px;
 }
+/* !delivrables */
 .deliv-container {
   display: flex;
   justify-content: center;
@@ -156,20 +159,20 @@ img {
   font-family: Inter-Regular;
   font-size: clamp(0.5rem, 1.9vw, 1.9rem);
   font-weight: 400;
-  line-height: 26px;
 }
+/* !works */
 .works {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 0.7vw;
   background-color: #f1f1f4;
-
   margin: 0 22vw 3vw 22vw;
 }
 .works-left {
   margin-left: 3vw;
   max-width: 700px;
+  margin-bottom: 5vw;
 }
 .works img {
   max-width: 600px;
@@ -204,7 +207,7 @@ img {
 .works-left p:nth-of-type(3) {
   margin-left: 2vw;
 }
-
+/* !critique */
 .critique-container {
   display: flex;
   justify-content: center;
@@ -220,6 +223,7 @@ img {
   font-weight: 700;
   line-height: normal;
   margin-bottom: 2vw;
+  padding-top: 4vw;
 }
 .critique-container p {
   color: #9fa2a7;
@@ -233,7 +237,7 @@ img {
 .critique-container p:nth-of-type(2) {
   margin-bottom: 1vw;
 }
-
+/* !section */
 .section-28 {
   background: url(../img/28.png) center no-repeat;
 }
@@ -270,6 +274,7 @@ img {
   align-items: center;
   flex-direction: column;
 } */
+/* !footer */
 footer h5 {
   color: #27282a;
   text-align: center;
@@ -279,6 +284,7 @@ footer h5 {
   line-height: normal;
   margin-bottom: 3vw;
 }
+/* !costum */
 
 .costum a {
   color: #2b2c2e;
