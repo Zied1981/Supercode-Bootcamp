@@ -38,6 +38,8 @@ header {
 } */
 
 /* !hier stehen geblieben */
+
+/* !nav */
 .logo {
   position: fixed;
   top: 1vw;
@@ -76,6 +78,7 @@ header {
   border-left: 1px solid gray;
   min-height: 25px;
 }
+/* !men section */
 
 h1 {
   text-align: center;
@@ -86,7 +89,7 @@ h1 {
   line-height: normal;
   padding-top: 10vw;
   margin-bottom: 4vw;
-  max-width: 250px;
+  max-width: 10vw;
   margin-left: 40vw;
 }
 
@@ -99,6 +102,7 @@ h1 {
   background-color: #2b2d2c;
   min-height: 50vh;
 } */
+/* !lautsprecher section */
 .lautsprecher-container {
   display: flex;
   justify-content: center;
@@ -132,6 +136,7 @@ h1 {
   font-weight: 400;
   line-height: 24px;
 }
+/* !soundsection */
 .sounds-section {
   background: url(../img/sound.jpeg) left no-repeat;
   background-color: #2b2d2c;
