@@ -47,7 +47,7 @@ p {
 
 .btn {
   background-color: #dfaa5b;
-  border-radius: 5px;
+  border-radius: 10px;
   padding: 10px 30px;
   color: white;
 }
@@ -173,7 +173,7 @@ footer a {
   color: white;
 }
 footer div img {
-  margin-bottom: 6vw;
+  margin-bottom: 3vw;
 }
 
 .hotel a {
@@ -191,4 +191,10 @@ form input {
 }
 input[type="submit"] {
   text-align: center;
+  cursor: pointer;
+}
+input[type="email"] {
+  border-radius: 10px;
+  background-color: white;
+  color: black;
 }
