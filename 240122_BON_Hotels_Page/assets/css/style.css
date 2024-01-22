@@ -1,0 +1,194 @@
+@font-face {
+  font-family: Ubuntu-Light;
+  src: url(../fonts/Ubuntu-Light.ttf);
+}
+@font-face {
+  font-family: Ubuntu-Regular;
+  src: url(../fonts/Ubuntu-Regular.ttf);
+}
+@font-face {
+  font-family: Ubuntu-Medium;
+  src: url(../fonts/Ubuntu-Medium.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+img {
+  max-width: 100%;
+}
+html {
+  /* font-size: 62.5%; */
+  font-family: Ubuntu-Regular, Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  font-size: clamp(1.8rem, 7.8vw, 10rem);
+}
+h2 {
+  font-size: clamp(1.4rem, 2.4vw, 3rem);
+}
+h3 {
+  font-size: clamp(1.4rem, 4.5vw, 4.8rem);
+  margin-bottom: 3vw;
+  color: #957554;
+}
+h4 {
+  color: white;
+  font-size: clamp(1.4rem, 4vw, 4.5rem);
+  margin-bottom: 2vw;
+}
+
+p {
+  font-size: clamp(1.4rem, 2.1vw, 2.5rem);
+}
+
+.btn {
+  background-color: #dfaa5b;
+  border-radius: 5px;
+  padding: 10px 30px;
+  color: white;
+}
+.big {
+  padding: 10px 70px;
+}
+
+a {
+  text-decoration: none;
+  color: #957554;
+  font-family: Ubuntu;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: normal;
+}
+/* .wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+} */
+header {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+.header-logo {
+  text-align: center;
+  padding: 3vw 2vw;
+}
+
+.header-nav {
+  display: flex;
+  justify-content: center;
+  gap: 4vw;
+  margin-bottom: 4vw;
+}
+.welcome {
+  background: url(../img/hero_image.png) center no-repeat;
+  background-size: cover;
+  min-height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  color: white;
+  gap: 2rem;
+  margin-bottom: 4vw;
+}
+/* !facilities */
+
+.facilities {
+  text-align: center;
+  color: #957554;
+}
+
+.facilities article {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6vw;
+  margin-bottom: 10vw;
+}
+.facilities div img {
+  margin-bottom: 10px;
+}
+/* !rooms  */
+.rooms article {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2vw;
+  margin: 0 2vw 8vw 2vw;
+}
+.rooms article div {
+  min-height: 40vw;
+  border-radius: 10px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: column;
+  padding: 30px;
+  text-align: center;
+  background-size: cover;
+}
+.rooms h3 {
+  text-align: center;
+}
+.rooms article div:nth-of-type(1) {
+  background: url(../img/standard_twin_room.png) center no-repeat;
+  background-size: cover;
+}
+.rooms article div:nth-of-type(2) {
+  background: url(../img/standard_room.png) center no-repeat;
+  background-size: cover;
+}
+
+.rooms article div:nth-of-type(3) {
+  background: url(../img/standard_view_room.png) center no-repeat;
+  background-size: cover;
+}
+.rooms article div:nth-of-type(4) {
+  background: url(../img/deluxe_room.png) center no-repeat;
+  background-size: cover;
+}
+
+/* !geta room */
+.geta {
+  text-align: center;
+  margin-bottom: 6vw;
+}
+/* !footer */
+footer {
+  background-color: black;
+  color: white;
+  padding: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+footer a {
+  color: white;
+}
+footer div img {
+  margin-bottom: 6vw;
+}
+
+.hotel a {
+  display: block;
+  margin-bottom: 1vw;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  /*  align-items: flex-start; */
+  gap: 2vw;
+}
+form input {
+  padding: 2vw;
+}
+input[type="submit"] {
+  text-align: center;
+}
