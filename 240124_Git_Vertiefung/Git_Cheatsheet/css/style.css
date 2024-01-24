@@ -1,6 +1,4 @@
 * {
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
 }
 html {
@@ -17,7 +15,11 @@ article {
 article section {
   min-height: 10vw;
   border-radius: 10%;
-  padding-inline: 2vw;
+  border: 10px solid black;
+  padding: 2vw;
+}
+article h2 {
+  margin-bottom: 1vw;
 }
 .general {
   background-color: pink;
