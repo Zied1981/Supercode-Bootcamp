@@ -11,6 +11,8 @@ article {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 1vw;
+  background-color: black;
+  box-shadow: 10px 5px 30px rgb(13, 155, 36);
 }
 article section {
   min-height: 10vw;
@@ -23,13 +25,28 @@ article h2 {
 }
 .general {
   background-color: pink;
+  z-index: 0;
 }
 .anlegen-wechseln {
   background-color: aqua;
+  z-index: 1;
+  margin-left: -50px;
 }
 .ablauf-merge {
   background-color: rgb(195, 151, 235);
+  z-index: 2;
+  margin-left: -100px;
 }
 .commits {
   background-color: yellow;
+  margin-left: -100px;
+  z-index: 3;
+}
+h1 {
+  font-family: "Times New Roman", Times, serif;
+  text-shadow: #fc0 1px 0 10px;
+}
+article section:hover {
+  transform: translateY(100px);
+  transition: 0.5s;
 }
