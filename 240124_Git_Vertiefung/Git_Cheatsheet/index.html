@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Git Cheat sheet</title>
+  </head>
+  <body>
+    <h1>Ich bin ein Git CheatSheet</h1>
+    <article>
+      <section class="general">
+        <h2>Allgemein</h2>
+        <p>git:ist local (Repository)</p>
+        <p>github:ist Remote(Repository)</p>
+      </section>
+
+      <section class="anlegen-wechseln">
+        <h2>Anlegen & wechseln</h2>
+        <p>git branch:zeigt alle Branches die vorhanden sind</p>
+        <p>*:zeigt in welchem branch man sich befindet</p>
+        <p>git branch:legt eine neue branch an</p>
+        <p>git checkout: wechselt zu einem neuen branch</p>
+        <p>
+          git checkout -b :legt eine neue branch an und wechselt direkt dahin.
+        </p>
+        <p>git checkout -d :löscht den branch</p>
+      </section>
+
+      <section class="ablauf-merg">
+        <h2>Merge : Zusammenführung von 2 branches</h2>
+        <p>git checkout main: wechselt zum main branch</p>
+        <p>
+          git Merge: versucht den main branch mit dem side branch zusammenführen
+        </p>
+        <p>git add ./ git commit -m "merge branch" /git push</p>
+        <p>git checkout -d :löscht den branch</p>
+      </section>
+
+      <section class="commits">
+        <h2>Commits</h2>
+        <p>git log</p>
+        <p>git log --oneline :die ID raus suchen wohin man zurück will</p>
+        <p>mit taste (Q) kommt man aus den commits raus</p>
+        <p>git checkout(ID). :man stellt den alten stand zurück</p>
+        <p>git add ./ git commit -m "" /git push</p>
+      </section>
+    </article>
+  </body>
+</html>

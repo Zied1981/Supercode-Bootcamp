@@ -1,0 +1,33 @@
+* {
+  /*  margin: 0;
+  padding: 0; */
+  /*  box-sizing: border-box; */
+}
+html {
+  margin: auto;
+  font-family: system-ui, sans-serif;
+}
+
+article {
+  color: black;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1vw;
+}
+article section {
+  min-height: 10vw;
+  border-radius: 10%;
+  padding-inline: 2vw;
+}
+.general {
+  background-color: pink;
+}
+.anlegen-wechseln {
+  background-color: aqua;
+}
+.ablauf-merg {
+  background-color: rgb(195, 151, 235);
+}
+.commits {
+  background-color: yellow;
+}
