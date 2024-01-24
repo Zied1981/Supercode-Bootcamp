@@ -11,7 +11,7 @@ article {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 1vw;
-  background-color: black;
+  background-color: a8dadc;
   box-shadow: 10px 5px 30px rgb(13, 155, 36);
 }
 article section {
@@ -24,21 +24,21 @@ article h2 {
   margin-bottom: 1vw;
 }
 .general {
-  background-color: pink;
+  background-color: #e38b92;
   z-index: 0;
 }
 .anlegen-wechseln {
-  background-color: aqua;
+  background-color: #a8dadc;
   z-index: 1;
   margin-left: -50px;
 }
 .ablauf-merge {
-  background-color: rgb(195, 151, 235);
+  background-color: #457b9d;
   z-index: 2;
   margin-left: -100px;
 }
 .commits {
-  background-color: yellow;
+  background-color: #fcbf49;
   margin-left: -100px;
   z-index: 3;
 }
