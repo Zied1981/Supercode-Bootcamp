@@ -6,23 +6,13 @@
     <title>Document</title>
   </head>
   <body>
+    <form onsubmit="getInputValue(event)">
+      <label for="byear">Gib dein Geburtsjahr ein</label>
 
+      <input id="byear" type="number" />
 
-
-
-    <form onsubmit="getInputValue (event)">
-        <label for="byear">Gib dein Geburtsjahr ein</label>
-          <input id="byear" type="byear" />
-
-          <label for="berechnen"></label>
-          <input type="submit" value="Berechne mein alter">
-
-
-
-
-    </form>
-
-
+      <input type="submit" value="Berechne mein alter" />
+      <h3></h3>
     </form>
     <script src="./assets/js/main.js"></script>
   </body>
