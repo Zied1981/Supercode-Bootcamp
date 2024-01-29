@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Document</title>
+  </head>
+  <body>
+    <form>
+    <label for="placeholder">Name<span>*</span></label>
+    <div class="name">
+        <input id="placeholder" type="text" placeholder=" Vorname" required />
+         <input id="placeholder" type="text" placeholder=" Nachname" required />
+        </div>
+
+        <label for="email">Email<span>*</span></label>
+
+        <input type="email" id="email" required />
+
+        <label for="Thema">Thema</label>
+        <select id="Thema">
+          <option value="General">General</option>
+          <option value="Advertise">Advertise</option>
+          <option value="Partnership">Partnership</option>
+        </select>
+
+        <label for="Nachricht">Nachricht<span>*</span></label>
+
+        <textarea required id="textarea" cols="35" rows="10"></textarea>
+
+        <input type="submit" value="Submit" />
+      </form>
+
+
+
+    </form>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
