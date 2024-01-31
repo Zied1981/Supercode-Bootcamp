@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  padding: 10vw 20vw;
+}
+
+label {
+  color: white;
+}
+
+body {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+p,
+h2,
+h3 {
+  color: black;
+}
