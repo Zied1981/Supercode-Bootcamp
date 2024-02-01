@@ -1,5 +1,5 @@
 function checkAirQuality() {
-  const airQuality = document.querySelector("#airquality").value;
+  const airQuality = Number(document.querySelector("#airquality").value);
   const h2Output = document.querySelector("h2");
   const h3Output = document.querySelector("h3");
   const body = document.querySelector("body");
@@ -11,6 +11,7 @@ function checkAirQuality() {
     body.style.backgroundColor = "green";
     luftQualität.innerHTML = " luftqualität : " + airQuality;
   } else if (airQuality > 50 && airQuality <= 100) {
+    // man kann auch .textcontent nutzen anstatt.innerhtml wenn es um ein text geht?
     h2Output.innerHTML = "Level of health concern :Moderate";
     h3Output.innerHTML = "Level of health effect :Acceptable quality";
     body.style.backgroundColor = "yellow";
