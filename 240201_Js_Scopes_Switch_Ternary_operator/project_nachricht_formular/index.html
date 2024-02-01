@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <main>
+      <div>
+        <form class="container">
+          <h3>Welche Nachricht möchstest du weitergeben?</h3>
+
+          <input type="text" id="text" ></input>
+
+          <input
+            onclick="writingText(event)"
+            class="senden"
+            type="submit"
+            value="senden"
+          />
+          <h6></h6>
+          <h5>letzte Nachricht:</h5>
+
+          <p class="output"></p>
+        </form>
+      </div>
+    </main>
+
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
