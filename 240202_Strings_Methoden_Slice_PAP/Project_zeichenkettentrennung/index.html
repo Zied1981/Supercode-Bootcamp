@@ -12,10 +12,10 @@
         <h1>Zeichenketten trennungsmachine</h1>
         <form onsubmit="return false">
           <label for="text-input">zu trenende Zeichenkette </label>
-          <input id="text-input" type="text" required />
+          <input id="text-input" type="text" />
 
           <label for="cut-input"> trennen bei Zeichenkette </label>
-          <input id="cut-input" type="text" required />
+          <input id="cut-input" type="text" />
 
           <div class="davor-danach">
             <input
@@ -39,10 +39,11 @@
           </div>
         </form>
         <h3>Ausgabe</h3>
-        <h4>Vorderteil</h4>
+        <h4>Vorderteil :</h4>
         <p class="frontoutput"></p>
-        <h4>hinterteil</h4>
+        <h4>hinterteil :</h4>
         <p class="backoutput"></p>
+        <h5 class="error"></h5>
       </section>
     </main>
 
