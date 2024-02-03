@@ -7,6 +7,7 @@ function checking() {
   let frontOutput = document.body.querySelector(".frontoutput");
   const backOutput = document.body.querySelector(".backoutput");
   const warning = document.body.querySelector(".error");
+
   //variante 1
   //wenn die abfrage mit html required gelöst werden soll.
   /*  if (cutEingabe === "davor") {
@@ -39,6 +40,11 @@ function checking() {
       frontOutput.innerHTML = cuttedText;
       backOutput.innerHTML = backCuttedText;
     }
+
+    /*    const indexSliceVar = textInput.indexOf(cutInput);
+    if (indexSliceVar === -1) {
+      indexSliceVar.innerHTML = "bitte geben sie ien gültiges zeichen an";
+    } */
   } else {
     warning.innerHTML = "Bitte geben Sie was ein !!!";
   }
