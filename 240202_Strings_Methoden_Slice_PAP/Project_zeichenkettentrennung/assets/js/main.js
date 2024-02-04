@@ -27,31 +27,26 @@ function checking() {
   // wenn wir ein warning erscheinen soll wenn der user nichts eingibt oder etwas falsch eingibt!!!!
   //variante 2
   if (textInput.length > 0 && cutInput.length > 0) {
-    if (cutEingabe === "davor") {
-      let cuttedText = textInput.slice(0, textInput.indexOf(cutInput));
-      let backCuttedText = textInput.slice(textInput.indexOf(cutInput));
+    if (textInput.includes(cutInput)) {
+      if (cutEingabe === "davor") {
+        let cuttedText = textInput.slice(0, textInput.indexOf(cutInput));
+        let backCuttedText = textInput.slice(textInput.indexOf(cutInput));
 
-      frontOutput.innerHTML = cuttedText;
-      backOutput.innerHTML = backCuttedText;
+        frontOutput.innerHTML = cuttedText;
+        backOutput.innerHTML = backCuttedText;
+        warning.innerHTML = "";
+      } else {
+        let cuttedText = textInput.slice(0, textInput.indexOf(cutInput) + 1);
+        let backCuttedText = textInput.slice(textInput.indexOf(cutInput) + 1);
+
+        frontOutput.innerHTML = cuttedText;
+        backOutput.innerHTML = backCuttedText;
+        warning.innerHTML = "";
+      }
     } else {
-      let cuttedText = textInput.slice(0, textInput.indexOf(cutInput) + 1);
-      let backCuttedText = textInput.slice(textInput.indexOf(cutInput) + 1);
-
-      frontOutput.innerHTML = cuttedText;
-      backOutput.innerHTML = backCuttedText;
+      warning.innerHTML = "Bitte geben Sie ein gültiges Trennzeichen an";
     }
-
-    /*    const indexSliceVar = textInput.indexOf(cutInput);
-    if (indexSliceVar === -1) {
-      indexSliceVar.innerHTML = "bitte geben sie ien gültiges zeichen an";
-    } */
   } else {
-    warning.innerHTML = "Bitte geben Sie was ein !!!";
+    warning.innerHTML = "Bitte geben sie ein Zeichen an!!";
   }
 }
-
-/* if ((textInput.length = 0)) {
-  warning.innerHTML = "Bitte geben Sie eine zeichenkette an";
-} else if ((cutInput.length = 0)) {
-  warning.innerHTML = "Bitte geben Sie einen trenner an";
-} */

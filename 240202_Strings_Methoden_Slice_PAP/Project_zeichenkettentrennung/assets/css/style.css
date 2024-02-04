@@ -3,13 +3,19 @@
   padding: 0;
   box-sizing: border-box;
 }
+main {
+    padding-top: 5vw;
+}
 
 section {
-  background-color: aqua;
+  background-color: rgb(223, 217, 189);
   padding-top: 5vw;
-  margin: 5vw;
-  border: 3px solid black;
-  min-height: 100vh;
+  margin: auto;
+  border: 10px solid black;
+  min-height: 85vh;
+  border-style: double;
+  border-radius: 10%;
+  max-width: 35%;
 }
 h1 {
   text-align: center;
@@ -20,28 +26,33 @@ form {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  gap: 2vw;
+  gap: 1vw;
 }
 h3 {
   text-align: center;
-  margin-bottom: 5vw;
+  margin-bottom: 3vw;
   padding-top: 3vw;
 }
 .frontoutput {
   text-align: center;
-  margin-bottom: 3vw;
+  margin-bottom: 2vw;
+  font-size: 20px;
 }
 .backoutput {
   text-align: center;
-  margin-bottom: 1vw;
+  margin-bottom: 3vw;
+  font-size: 20px;
+
 }
 h4 {
   text-align: center;
-  margin-bottom: 5vw;
+  margin-bottom: 3vw;
 }
 .btn {
-  padding: 0.5vw;
+  padding: 0.5vw 1vw;
   cursor: pointer;
+  border-radius: 5px;
+  background-color: white;
 }
 #danach,
 #davor {
@@ -49,4 +60,11 @@ h4 {
 }
 .error {
   color: red;
+  text-align: center;
+  padding-top: 1vw;
 }
+#text-input,
+#cut-input {
+  padding: 1vw 3vw;
+  border-radius: 10px;
+  font-size: 20px;
