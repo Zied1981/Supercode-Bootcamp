@@ -9,13 +9,13 @@ main {
 
 section {
   background-color: rgb(223, 217, 189);
-  padding-top: 5vw;
+  padding-top: 10vw;
   margin: auto;
   border: 10px solid black;
   min-height: 85vh;
   border-style: double;
   border-radius: 10%;
-  max-width: 35%;
+  max-width: 50%;
 }
 h1 {
   text-align: center;
@@ -60,11 +60,13 @@ h4 {
 .error {
   color: red;
   text-align: center;
-  padding-top: 1vw;
+  padding-top: 3vw;
+  font-size: 25px;
 }
 #text-input,
 #cut-input {
   padding: 1vw 3vw;
   border-radius: 10px;
   font-size: 20px;
+  background-color: #fff;
 }
