@@ -5,17 +5,21 @@
 }
 main {
   padding-top: 5vw;
+  margin: auto;
+}
+html {
+  font-size: 62.5%;
 }
 
 section {
   background-color: rgb(223, 217, 189);
-  padding-top: 10vw;
+  padding-top: 15vw;
   margin: auto;
   border: 10px solid black;
   min-height: 85vh;
   border-style: double;
   border-radius: 10%;
-  max-width: 50%;
+  width: 50%;
 }
 h1 {
   text-align: center;
@@ -32,6 +36,7 @@ h3 {
   text-align: center;
   margin-bottom: 3vw;
   padding-top: 3vw;
+  font-size: clamp(1rem, 1.5vw, 2rem);
 }
 .frontoutput {
   text-align: center;
@@ -46,6 +51,7 @@ h3 {
 h4 {
   text-align: center;
   margin-bottom: 3vw;
+  font-size: clamp(1rem, 1.5vw, 2rem);
 }
 .btn {
   padding: 0.5vw 1vw;
@@ -67,6 +73,9 @@ h4 {
 #cut-input {
   padding: 1vw 3vw;
   border-radius: 10px;
-  font-size: 20px;
+  font-size: clamp(1rem, 1.5vw, 2rem);
   background-color: #fff;
+}
+form label {
+  font-size: clamp(1.4rem, 2vw, 2.5rem);
 }
