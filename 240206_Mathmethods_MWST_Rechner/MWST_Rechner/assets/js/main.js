@@ -48,8 +48,8 @@ function counting(event) {
     document.querySelector(".bruttobetrag").innerHTML =
       betragEingabe + ergebnisAbgerundet;
   } else if (aufschlag === "brutto zu netto") {
-    document.querySelector(".mwstbetrag").innerHTML = ergebnisAbgerundet;
     document.querySelector(".bruttobetrag").innerHTML =
-      betragEingabe - ergebnisAbgerundet;
+      betragEingabe - ergebnisAbgerundet / 1.19;
+    document.querySelector(".mwstbetrag").innerHTML = ergebnisAbgerundet / 1.19;
   }
 }
