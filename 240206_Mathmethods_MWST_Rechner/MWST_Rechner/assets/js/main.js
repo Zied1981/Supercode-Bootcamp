@@ -53,14 +53,3 @@ function counting(event) {
       betragEingabe - ergebnisAbgerundet;
   }
 }
-
-/*     }
-  } else if (aufschlag === "mwst aufschlagen" && mwst === "7%") {
-    mwstBetrag.innerHTML = betragEingabe * mwst;
-    endBetrag.innerHTML = betragEingabe + mwstBetrag;
-  } else {
-    mwstBetrag.innerHTML = betragEingabe * mwst;
-    endBetrag.innerHTML = betragEingabe - mwstBetrag;
-  }
-}
- */
