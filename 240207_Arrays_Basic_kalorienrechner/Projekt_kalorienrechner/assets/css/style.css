@@ -3,13 +3,10 @@
   padding: 0;
   box-sizing: border-box;
 }
-/* body {
-  padding-top: 5vw;
-} */
+
 .wrapper {
-  max-width: 50%;
   margin: auto;
-  min-height: 100vh;
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -21,26 +18,37 @@ form {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  text-align: center;
-
-  gap: 5vw;
-  background-color: rgb(231, 157, 231);
+  gap: 2vw;
+  background-color: rgba(130, 130, 101, 0.764);
   border-radius: 10%;
-  min-height: 80vw;
-  border: 10px solid black;
+  max-width: 70%;
+
+  border: 10px solid rgb(24, 44, 222);
   border-style: double;
+  margin-top: 3vw;
+}
+.alter,
+.gewicht,
+.grösse {
+  width: 230px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .btn {
   background-color: blue;
   color: white;
-  padding: 1vw 9vw;
+  padding: 0.5vw 9vw;
   border-radius: 5%;
+  margin-bottom: 2vw;
+  margin-left: 14vw;
+  font-size: 24px;
 }
 .container-top {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  margin-bottom: 2vw;
 }
 .container-mittel {
   display: flex;
@@ -51,4 +59,27 @@ form {
   display: flex;
   justify-content: space-around;
   align-items: center;
+}
+#belastung {
+  margin-bottom: 2vw;
+  margin-left: 10vw;
+  font-size: 20px;
+  max-width: 60%;
+  padding: 0.5vw 4vw;
+}
+
+#weiblich {
+  margin-left: 20vw;
+  margin-bottom: 3vw;
+}
+
+h1 {
+  font-size: 45px;
+}
+p {
+  font-size: 24px;
+  margin-bottom: 2vw;
+}
+.radiobtn {
+  font-size: 24px;
 }

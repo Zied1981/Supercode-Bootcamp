@@ -13,38 +13,44 @@
           <h1>Kalorienrechner</h1>
           <div class="grösse">
             <label for="körpergrösse">körpergrösse</label>
-            <input type="text" id="körpergrösse" value="" required />
+            <input type="number" id="körpergrösse" value="" required />
           </div>
-          <div class="age">
+          <div class="alter">
             <label for="alter">Alter</label>
-            <input type="text" id="alter" value="" required />
+            <input type="number" id="alter" value="" required />
           </div>
           <div class="gewicht">
             <label for="gewicht">Gewicht</label>
-            <input type="text" id="gewicht" value="" required />
+            <input type="number" id="gewicht" value="" required />
           </div>
-          <div>
-            <input id="weiblich" type="radio" name="radio" value="" />
+          <div class="radiobtn">
+            <input id="weiblich" type="radio" name="radio" value="weiblich" />
             <label for="weiblich">weiblich</label>
 
-            <input id="männlich" type="radio" name="radio" value="" checked />
+            <input
+              id="männlich"
+              type="radio"
+              name="radio"
+              value="männlich"
+              checked
+            />
             <label for="männlich">männlich</label>
             <div>
               <select name="belastung" id="belastung">
                 <option value="0.95">schlafen</option>
-                <option value="1,2">nur sitzen oder liegen</option>
-                <option value="1,5">
+                <option value="1.2">nur sitzen oder liegen</option>
+                <option value="1.5">
                   Auschliesslich sitzende tätigkeit mit wenig oder keine
                   körperliche aktivität
                 </option>
-                <option value="1,7">
+                <option value="1.7">
                   sitzende tätigkeit mit zeitweilg gehende oder stehende
                   tätigkeit
                 </option>
-                <option value="1,9">
+                <option value="1.9">
                   überwiegend gehende oder stehende tätigkeit
                 </option>
-                <option value="2,2">
+                <option value="2.2">
                   körperliche anstrende berufliche Arbeit
                 </option>
               </select>
@@ -54,7 +60,7 @@
                 class="btn"
                 type="button"
                 value="Submit"
-                onclick="result()"
+                onclick="result(event)"
               />
             </div>
             <div class="rechner-container"></div>
@@ -65,13 +71,13 @@
             </div>
             <div class="container-mittel">
               <p>Grundumsatz</p>
-              <p></p>
-              <p></p>
+              <p class="grund-kcal"></p>
+              <p class="grund-kj"></p>
             </div>
             <div class="container-unten">
               <p>Gesamtumsatz</p>
-              <p></p>
-              <p></p>
+              <p class="gesamt-kcal"></p>
+              <p class="gesamt-kj"></p>
             </div>
           </div>
         </form>
