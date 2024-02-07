@@ -39,17 +39,22 @@ function counting(event) {
   //
 
   let ergebnis = betragEingabe * (mwst / 100);
-  let ergebnisAbgerundet = Math.round(ergebnis);
+  let ergebnisAbgerundet = ergebnis.toFixed(2);
   console.log(ergebnisAbgerundet);
 
   if (aufschlag == "netto zu brutto") {
     document.querySelector(".mwstbetrag").innerHTML = ergebnisAbgerundet;
 
-    document.querySelector(".bruttobetrag").innerHTML =
-      betragEingabe + ergebnisAbgerundet;
+    document.querySelector(".bruttobetrag").innerHTML = (
+      betragEingabe + ergebnisAbgerundet
+    ).toFixed(2);
   } else if (aufschlag === "brutto zu netto") {
-    document.querySelector(".bruttobetrag").innerHTML =
-      betragEingabe - ergebnisAbgerundet / 1.19;
-    document.querySelector(".mwstbetrag").innerHTML = ergebnisAbgerundet / 1.19;
+    document.querySelector(".bruttobetrag").innerHTML = (
+      betragEingabe -
+      ergebnisAbgerundet / 1.19
+    ).toFixed(2);
+    document.querySelector(".mwstbetrag").innerHTML = (
+      ergebnisAbgerundet / 1.19
+    ).toFixed(2);
   }
 }
