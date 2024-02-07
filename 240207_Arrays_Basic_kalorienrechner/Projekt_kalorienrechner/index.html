@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <main>
+      <article class="wrapper">
+        <form>
+          <h1>Kalorienrechner</h1>
+          <div class="grösse">
+            <label for="körpergrösse">körpergrösse</label>
+            <input type="text" id="körpergrösse" value="" required />
+          </div>
+          <div class="age">
+            <label for="alter">Alter</label>
+            <input type="text" id="alter" value="" required />
+          </div>
+          <div class="gewicht">
+            <label for="gewicht">Gewicht</label>
+            <input type="text" id="gewicht" value="" required />
+          </div>
+          <div>
+            <input id="weiblich" type="radio" name="radio" value="" />
+            <label for="weiblich">weiblich</label>
+
+            <input id="männlich" type="radio" name="radio" value="" checked />
+            <label for="männlich">männlich</label>
+            <div>
+              <select name="belastung" id="belastung">
+                <option value="0.95">schlafen</option>
+                <option value="1,2">nur sitzen oder liegen</option>
+                <option value="1,5">
+                  Auschliesslich sitzende tätigkeit mit wenig oder keine
+                  körperliche aktivität
+                </option>
+                <option value="1,7">
+                  sitzende tätigkeit mit zeitweilg gehende oder stehende
+                  tätigkeit
+                </option>
+                <option value="1,9">
+                  überwiegend gehende oder stehende tätigkeit
+                </option>
+                <option value="2,2">
+                  körperliche anstrende berufliche Arbeit
+                </option>
+              </select>
+            </div>
+            <div>
+              <input
+                class="btn"
+                type="button"
+                value="Submit"
+                onclick="result()"
+              />
+            </div>
+            <div class="rechner-container"></div>
+            <div class="container-top">
+              <p></p>
+              <p>Kcal</p>
+              <p>kJ</p>
+            </div>
+            <div class="container-mittel">
+              <p>Grundumsatz</p>
+              <p></p>
+              <p></p>
+            </div>
+            <div class="container-unten">
+              <p>Gesamtumsatz</p>
+              <p></p>
+              <p></p>
+            </div>
+          </div>
+        </form>
+      </article>
+    </main>
+
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
