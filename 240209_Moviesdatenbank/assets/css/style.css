@@ -24,8 +24,7 @@ h3 {
   justify-content: center;
   align-items: center;
   gap: 1vw;
-  margin-bottom: 1vw;
-
+  margin-bottom: 2vw;
   margin-left: 5vw;
 }
 .btn {
@@ -37,30 +36,26 @@ h3 {
   margin-bottom: 3vw;
 }
 #eingabefeld {
-  padding: 0.5vw 8vw;
-  border-radius: 5%;
+  padding: 1.5vw 12vw;
+  border-radius: 25px;
   border: 1px solid rgba(231, 221, 221, 0.902);
 }
 #suchbutton {
-  padding: 0.8vw 2vw;
-  border-radius: 15%;
+  padding: 1.5vw 4vw;
+  border-radius: 20px;
   background-color: rgb(221, 90, 75);
   color: white;
   border: 1px solid white;
 }
 .btn input {
-  padding: 0.8vw 1.5vw;
-  border: 2px solid red;
+  padding: 1.5vw 3.5vw;
+  border: 2px solid rgb(255, 253, 253);
+  border-radius: 20px;
   background-color: white;
-  border-radius: 15%;
-  color: black;
+  color: whitesmoke;
+  background-color: black;
 }
-/* .section-cont {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  background-color: rgb(174, 240, 152);
-}
- */
+
 .container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -90,7 +85,7 @@ h3 {
   margin-bottom: 1vw;
 }
 .inhalt_div {
-  background-color: rgb(174, 240, 152);
+  background-color: rgb(142, 244, 108);
   border-radius: 10%;
   padding: 2vw 2vw;
 }

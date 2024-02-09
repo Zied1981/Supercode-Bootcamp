@@ -945,40 +945,107 @@ const movies = [
   ],
 ];
 console.log(movies);
-
+// diese wird immer geladen wenn browser neu geladen wird.
 const boxInhalt = document.querySelector(".container");
 movies.forEach((content, index) => {
   console.log(index);
   console.log(content);
-
+  //
   boxInhalt.innerHTML += `<div class="inhalt_div">
   <p class="film_titel">${content[0]}</p>
   <p class="film_jahr">${content[1]}</p>
   <p class="regisseur">${content[2]}</p>
   <p class="film_länge">${content[3]}</p>
-  <p class="film_genre">${content[4]}</p>
+  <p class="film_genre">${content[4].map((genre) => genre).join(`<br>`)}</p>
+
   <p class="film_rating">${content[5]}</p>
   <div>`;
 });
+//<p>${tile[4].map((genre) => genre).join(<br>)}</p>
+// bis hier hin //
+
 function suchen() {
-  /*  boxInhalt.innerHTML = ""; */
+  // damit leere ich den vorherigen inhalt//
+  boxInhalt.innerHTML = "";
+  //hiermit deklariere eine Variable vom test-inputfeld und hole mir den value + klein machen ;
+
   let suchInput = document.querySelector("#eingabefeld").value.toLowerCase();
   console.log(suchInput);
-  movies.filter(filme /* {
-    return filme[0].toLowerCase().includes(suchInput);
-  }); */
-    ) =>
-      (boxInhalt.innerHTML += `<div class="inhalt_div">
-  <p class="film_titel">${filme[0]}</p>
-  <p class="film_jahr">${filme[1]}</p>
-  <p class="regisseur">${filme[2]}</p>
-  <p class="film_länge">${filme[3]}</p>
-  <p class="film_genre">${filme[4]}</p>
-  <p class="film_rating">${filme[5]}</p>
-  <div>`)
-  );
-}
+  // hierdrunter deklariere movieSearch var und lassen den array movie filter drüber laufen;=> searchmovie= neue ARRAY.
 
+  //und soll jeden einzelnen film an und gibt zurück filme die meinem such input enthalten;
+
+  const movieSearch = movies.filter((filme) => {
+    return (
+      filme[0].toLowerCase().includes(suchInput.toLowerCase()) ||
+      filme[4].join().toLowerCase().includes(suchInput.toLowerCase()) ||
+      filme[1].toLowerCase().includes(suchInput.toLowerCase()) ||
+      filme[2].toLowerCase().includes(suchInput.toLowerCase()) ||
+      filme[3].toLowerCase().includes(suchInput.toLowerCase()) ||
+      filme[5].toLowerCase().includes(suchInput.toLowerCase())
+    );
+  });
+  console.log(movieSearch);
+  //hiermit holen wir das ergbnis ins html visuell.
+  movieSearch.forEach((elemente) => {
+    boxInhalt.innerHTML += `<div class="inhalt_div">
+    <p class="film_titel">${elemente[0]}</p>
+    <p class="film_jahr">${elemente[1]}</p>
+    <p class="regisseur">${elemente[2]}</p>
+    <p class="film_länge">${elemente[3]}</p>
+    <p class="film_genre">${elemente[4]}</p>
+    <p class="film_rating">${elemente[5]}</p>
+    <div>`;
+  });
+}
+//hiermit hoeln wir die func yearup und sortieren mit callbackfunction a-b mit [1]für das jahr;
 const yearup = () => {
-  let yearUpInhalt = movies.sort((a, b) => a - b);
+  boxInhalt.innerHTML = "";
+  let yearUpInhalt = movies.sort((a, b) => a[1] - b[1]);
+  console.log(yearUpInhalt);
+  yearUpInhalt.forEach((elemente) => {
+    boxInhalt.innerHTML += `<div class="inhalt_div">
+    <p class="film_titel">${elemente[0]}</p>
+    <p class="film_jahr">${elemente[1]}</p>
+    <p class="regisseur">${elemente[2]}</p>
+    <p class="film_länge">${elemente[3]}</p>
+    <p class="film_genre">${elemente[4]}</p>
+    <p class="film_rating">${elemente[5]}</p>
+    <div>`;
+  });
+};
+//hiermit deklarieren+ausführen wir die func yeardown,wir
+// leeren den inhalt von vorher mit .innerhtml="";sortieren das ganze allerding mit b-a und index 1 für down(rückwärts).
+const yeardown = () => {
+  boxInhalt.innerHTML = "";
+  let yearDownInhalt = movies.sort((a, b) => b[1] - a[1]);
+  console.log(yearDownInhalt);
+  yearDownInhalt.forEach((elemente) => {
+    boxInhalt.innerHTML += `<div class="inhalt_div">
+      <p class="film_titel">${elemente[0]}</p>
+      <p class="film_jahr">${elemente[1]}</p>
+      <p class="regisseur">${elemente[2]}</p>
+      <p class="film_länge">${elemente[3]}</p>
+      <p class="film_genre">${elemente[4]}</p>
+      <p class="film_rating">${elemente[5]}</p>
+      <div>`;
+  });
+};
+//hier wir die func besterate ausgeführt mit dem index 5 für rating
+//und imer wieder erst movies sortieren und dann forEach drüber laufen lassen.
+
+const besterate = () => {
+  boxInhalt.innerHTML = "";
+  let besteRateInhalt = movies.sort((a, b) => b[5] - a[5]);
+  console.log(besteRateInhalt);
+  besteRateInhalt.forEach((elemente) => {
+    boxInhalt.innerHTML += `<div class="inhalt_div">
+        <p class="film_titel">${elemente[0]}</p>
+        <p class="film_jahr">${elemente[1]}</p>
+        <p class="regisseur">${elemente[2]}</p>
+        <p class="film_länge">${elemente[3]}</p>
+        <p class="film_genre">${elemente[4]}</p>
+        <p class="film_rating">${elemente[5]}</p>
+        <div>`;
+  });
 };
