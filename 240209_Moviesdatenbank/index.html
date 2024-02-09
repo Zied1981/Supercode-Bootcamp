@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <main>
+      <section>
+        <h1>Movies for You</h1>
+        <h3>The best MovieDB</h3>
+        <article class="eingabe">
+          <div>
+            <input id="eingabefeld" type="text" required />
+          </div>
+          <div>
+            <input
+              onclick="suchen()"
+              type="button"
+              id="suchbutton"
+              value="Search"
+            />
+          </div>
+        </article>
+
+        <div class="btn">
+          <div>
+            <input onclick="yearup()" type="button" value="YEAR UP" />
+          </div>
+          <div>
+            <input onclick="yeardown()" type="button" value="YEAR DOWN" />
+          </div>
+          <div>
+            <input onclick="bestrate()" type="button" value="BEST RATE" />
+          </div>
+        </div>
+      </section>
+      <section class="section-cont">
+        <div class="container"></div>
+      </section>
+    </main>
+
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>

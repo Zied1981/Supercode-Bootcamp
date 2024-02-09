@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  font-size: 50px;
+  text-align: center;
+  margin-bottom: 1vw;
+  padding-top: 5vw;
+}
+h3 {
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 2vw;
+}
+.eingabe {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1vw;
+  margin-bottom: 1vw;
+
+  margin-left: 5vw;
+}
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5vw;
+  margin-left: 5vw;
+  margin-bottom: 3vw;
+}
+#eingabefeld {
+  padding: 0.5vw 8vw;
+  border-radius: 5%;
+  border: 1px solid rgba(231, 221, 221, 0.902);
+}
+#suchbutton {
+  padding: 0.8vw 2vw;
+  border-radius: 15%;
+  background-color: rgb(221, 90, 75);
+  color: white;
+  border: 1px solid white;
+}
+.btn input {
+  padding: 0.8vw 1.5vw;
+  border: 2px solid red;
+  background-color: white;
+  border-radius: 15%;
+  color: black;
+}
+/* .section-cont {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  background-color: rgb(174, 240, 152);
+}
+ */
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 1vw 1vw;
+
+  gap: 1vw;
+}
+.container p {
+  text-align: center;
+}
+.film_titel {
+  font-size: 34px;
+  margin-bottom: 1vw;
+}
+.film_jahr {
+  font-size: 16px;
+  margin-bottom: 0.5vw;
+}
+.regisseur {
+  font-size: 24px;
+  margin-bottom: 1.5vw;
+}
+.film_länge,
+.film_genre,
+.film_rating {
+  font-size: 14px;
+  margin-bottom: 1vw;
+}
+.inhalt_div {
+  background-color: rgb(174, 240, 152);
+  border-radius: 10%;
+  padding: 2vw 2vw;
+}
