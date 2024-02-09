@@ -964,9 +964,7 @@ function suchen() {
   /*  boxInhalt.innerHTML = ""; */
   let suchInput = document.querySelector("#eingabefeld").value.toLowerCase();
   console.log(suchInput);
-  movies.filter(
-    (
-      filme /* {
+  movies.filter(filme /* {
     return filme[0].toLowerCase().includes(suchInput);
   }); */
     ) =>
