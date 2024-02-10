@@ -41,7 +41,7 @@ h3 {
 #eingabefeld {
   padding: 1.5vw 10vw;
   border-radius: 25px;
-  border: 5px solid white;
+  border: 2px solid white;
   border-style: dashed;
   background-color: black;
   color: white;
@@ -52,18 +52,20 @@ h3 {
   border-radius: 20px;
   background-color: rgb(221, 90, 75);
   color: white;
-  border: 5px solid white;
+  border: 2px solid white;
   border-style: dashed;
   font-size: 18px;
+  font-weight: 600;
 }
 .btn input {
   padding: 1.5vw 4vw;
-  border: 5px solid rgb(255, 253, 253);
+  border: 2px solid rgb(255, 253, 253);
   border-style: dashed;
   border-radius: 20px;
   background-color: white;
   color: whitesmoke;
   background-color: black;
+  font-weight: 600;
 }
 
 .container {
@@ -77,16 +79,18 @@ h3 {
   text-align: center;
 }
 .film_titel {
-  font-size: 34px;
+  font-size: 28px;
   margin-bottom: 1vw;
+  font-weight: bold;
 }
 .film_jahr {
   font-size: 16px;
   margin-bottom: 0.5vw;
 }
 .regisseur {
-  font-size: 24px;
+  font-size: 16px;
   margin-bottom: 1.5vw;
+  font-weight: 600;
 }
 .film_länge,
 .film_genre,
@@ -98,6 +102,6 @@ h3 {
   background-color: #57cc99;
   border-radius: 10%;
   padding: 2vw 2vw;
-  border: 8px solid white;
+  border: 3px solid white;
   border-style: dashed;
 }

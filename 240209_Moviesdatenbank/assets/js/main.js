@@ -950,29 +950,31 @@ const boxInhalt = document.querySelector(".container");
 movies.forEach((content, index) => {
   console.log(index);
   console.log(content);
-  //
+
   boxInhalt.innerHTML += `<div class="inhalt_div">
   <p class="film_titel">${content[0]}</p>
   <p class="film_jahr">${content[1]}</p>
   <p class="regisseur">${content[2]}</p>
   <p class="film_länge">${content[3]}</p>
   <p class="film_genre">${content[4].map((genre) => genre).join(`<br>`)}</p>
-
   <p class="film_rating">${content[5]}</p>
   <div>`;
 });
-//<p>${tile[4].map((genre) => genre).join(<br>)}</p>
 // bis hier hin //
+
+//hiermit kann man über die genre mappen und mit .join() tief rein navigieren und
+//mit `<br>` dann auschneiden und untereinader visuell darstellen.
+///<p>${tile[4].map((genre) => genre).join(<br>)}</p>///
 
 function suchen() {
   // damit leere ich den vorherigen inhalt//
   boxInhalt.innerHTML = "";
-  //hiermit deklariere eine Variable vom test-inputfeld und hole mir den value + klein machen ;
 
+  //hiermit deklariere eine Variable vom test-inputfeld und hole mir den value + klein machen ;
   let suchInput = document.querySelector("#eingabefeld").value.toLowerCase();
   console.log(suchInput);
-  // hierdrunter deklariere movieSearch var und lassen den array movie filter drüber laufen;=> searchmovie= neue ARRAY.
 
+  // hierdrunter deklarieren wir die movieSearch Var und lassen den array movie .filter() drüber laufen;=> movieSearch ist = neue ARRAY.
   //und soll jeden einzelnen film an und gibt zurück filme die meinem such input enthalten;
 
   const movieSearch = movies.filter((filme) => {
