@@ -978,10 +978,10 @@ function suchen() {
   const movieSearch = movies.filter((filme) => {
     return (
       filme[0].toLowerCase().includes(suchInput.toLowerCase()) ||
-      filme[4].join().toLowerCase().includes(suchInput.toLowerCase()) ||
       filme[1].toLowerCase().includes(suchInput.toLowerCase()) ||
       filme[2].toLowerCase().includes(suchInput.toLowerCase()) ||
       filme[3].toLowerCase().includes(suchInput.toLowerCase()) ||
+      filme[4].join().toLowerCase().includes(suchInput.toLowerCase()) ||
       filme[5].toLowerCase().includes(suchInput.toLowerCase())
     );
   });
