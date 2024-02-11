@@ -5,12 +5,18 @@
 }
 
 .wrapper {
-  margin: auto;
-
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  background-color: rgba(141, 134, 5, 0.88);
+  max-width: 95%;
+  min-height: 80vh;
+  border-radius: 10%;
+
+  border: 10px solid rgb(1, 1, 6);
+  border-style: double;
+  margin: 4vw 2vw;
 }
 
 form {
@@ -18,14 +24,15 @@ form {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  gap: 2vw;
-  background-color: rgba(130, 130, 101, 0.764);
-  border-radius: 10%;
-  max-width: 70%;
+  gap: 5vw;
+  /*  background-color: rgba(230, 230, 70, 0.764); */
+  /*  border-radius: 10%; */
+  /*   max-width: 80%;
+  min-height: 100vh; */
 
-  border: 10px solid rgb(24, 44, 222);
-  border-style: double;
-  margin-top: 3vw;
+  /*   border: 10px solid rgb(1, 1, 6);
+  border-style: double; */
+  margin-top: 1vw;
 }
 .alter,
 .gewicht,
@@ -36,40 +43,50 @@ form {
 }
 
 .btn {
-  background-color: blue;
+  background-color: rgb(4, 47, 100);
   color: white;
-  padding: 0.5vw 9vw;
-  border-radius: 5%;
-  margin-bottom: 2vw;
-  margin-left: 14vw;
+  padding: 1.5vw 9vw;
+  border-radius: 30%;
+  margin-bottom: 7vw;
+  margin-left: 50vw;
   font-size: 24px;
+}
+.rechner-container {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
 }
 .container-top {
   display: flex;
-  justify-content: space-around;
-  align-items: center;
-  margin-bottom: 2vw;
+  justify-content: flex-start;
+  margin-bottom: 4vw;
+
+  gap: 25vw;
 }
 .container-mittel {
   display: flex;
-  justify-content: space-around;
-  align-items: center;
+  justify-content: space-between;
+
+  margin-bottom: 4vw;
+  gap: 12vw;
 }
 .container-unten {
   display: flex;
-  justify-content: space-around;
-  align-items: center;
+  justify-content: space-between;
+
+  margin-bottom: 2vw;
+  gap: 11vw;
 }
 #belastung {
-  margin-bottom: 2vw;
-  margin-left: 10vw;
+  margin-bottom: 5vw;
+  margin-left: 35vw;
   font-size: 20px;
-  max-width: 60%;
+  max-width: 45%;
   padding: 0.5vw 4vw;
 }
 
 #weiblich {
-  margin-left: 20vw;
+  margin-left: 50vw;
   margin-bottom: 3vw;
 }
 
