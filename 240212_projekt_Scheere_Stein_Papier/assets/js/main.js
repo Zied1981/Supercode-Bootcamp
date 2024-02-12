@@ -8,9 +8,9 @@ const spielerOutput = document.querySelector(".userauswahl");
 const pcOutput = document.querySelector(".pcauswahl");
 const ergebnisOutput = document.querySelector(".ergebnis");
 const rundenOutput = document.querySelector(".rounds");
-let roundVAR = 0;
 const myWinOutput = document.querySelector(".mywin");
 const pcWinOutput = document.querySelector(".pcwin");
+let roundVAR = 0;
 let myScore = 0;
 let pcScore = 0;
 
