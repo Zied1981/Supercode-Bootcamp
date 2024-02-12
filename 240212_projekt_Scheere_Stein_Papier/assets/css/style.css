@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.auswahl img {
+  max-width: 150px;
+  min-height: 150px;
+  border: 3px solid white;
+  border-radius: 50%;
+  /*  box-shadow: 5px 5px 150px rgb(242, 245, 245); */
+  box-shadow: 0px 0px 50px 30px #f4eee0;
+  margin-bottom: 10vw;
+  margin: 0 10vw;
+  padding-left: 3vw;
+}
+
+h1 {
+  text-align: center;
+  padding-top: 5vw;
+  margin-bottom: 5vw;
+  color: white;
+  font-size: 50px;
+}
+h3 {
+  text-align: center;
+  color: white;
+  margin-bottom: 5vw;
+}
+html {
+  background-color: rgb(68, 8, 124);
+  /*   background-image: url(../img/scheere\ stein\ papoier.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat; */
+}
+
+.auswahl {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 15vw;
+}
+
+#button {
+  margin-left: 42vw;
+  padding: 2vw 4vw;
+  border: 3px solid white;
+  border-radius: 20px;
+  font-size: 24px;
+  /* box-shadow: 5px 5px 150px rgb(242, 245, 245); */
+  color: white;
+  background-color: blueviolet;
+  box-shadow: 0px 0px 50px 30px #f4eee0;
+}
+.outputs {
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 15vw;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+}
+.rounds,
+.mywin,
+.pcwin {
+  color: white;
+  margin-left: 4vw;
+  font-size: 24px;
+}
+.score {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2vw;
+}
