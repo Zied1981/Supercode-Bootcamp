@@ -5,30 +5,33 @@
 }
 
 .auswahl img {
-  max-width: 150px;
-  min-height: 150px;
-  border: 3px solid white;
+  max-width: 170px;
+  min-height: 170px;
+  border: 5px solid rgb(233, 233, 233);
+
   border-radius: 50%;
   /*  box-shadow: 5px 5px 150px rgb(242, 245, 245); */
   box-shadow: 0px 0px 50px 30px #f4eee0;
-  margin-bottom: 10vw;
+  margin-bottom: 1vw;
   margin: 0 10vw;
-  padding-left: 3vw;
+  /* padding-left: 3vw; */
 }
 
 h1 {
   text-align: center;
-  padding-top: 5vw;
-  margin-bottom: 5vw;
+  padding-top: 1vw;
+  margin-bottom: 2vw;
   color: white;
-  font-size: 50px;
+  font-size: 70px;
   text-shadow: 5px 15px 10px rgb(5, 5, 5);
 }
 h3 {
   text-align: center;
   color: white;
-  margin-bottom: 5vw;
+  margin-bottom: 4vw;
+
   text-shadow: 5px 15px 10px rgb(5, 5, 5);
+  font-size: 45px;
 }
 html {
   background-color: rgb(68, 8, 124);
@@ -40,7 +43,7 @@ html {
 .auswahl {
   display: flex;
   justify-content: space-around;
-  margin-bottom: 15vw;
+  margin-bottom: 10vw;
 }
 
 #button {
@@ -53,14 +56,16 @@ html {
   color: white;
   background-color: blueviolet;
   box-shadow: 0px 0px 50px 30px #f4eee0;
+  margin-bottom: 10vw;
 }
 .outputs {
   text-align: center;
   font-size: 26px;
-  margin-bottom: 15vw;
+  margin-bottom: 7vw;
   color: white;
   display: flex;
   justify-content: space-around;
+  text-shadow: 5px 15px 10px rgb(5, 5, 5);
 }
 .rounds,
 .mywin,

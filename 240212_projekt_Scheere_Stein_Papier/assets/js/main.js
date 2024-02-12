@@ -37,30 +37,30 @@ function myplay(meineAuswahl) {
   console.log(pcAuswahl);
 
   if (pcAuswahl === 1) {
-    pcAuswahl = "stein";
+    pcAuswahl = "rock";
     pcOutput.innerHTML = pcAuswahl;
   } else if (pcAuswahl === 2) {
-    pcAuswahl = "papier";
+    pcAuswahl = "paper";
     pcOutput.innerHTML = pcAuswahl;
   } else {
-    pcAuswahl = "scheere";
+    pcAuswahl = "scissors";
     pcOutput.innerHTML = pcAuswahl;
   }
   //::::::::://
   if (meineAuswahl === pcAuswahl) {
-    result = "Draw";
+    result = "draw";
   } else if (
-    (meineAuswahl === "stein" && pcAuswahl === "papier") ||
-    (meineAuswahl === "papier" && pcAuswahl === "scheere") ||
-    (meineAuswahl === "scheere" && pcAuswahl === "stein")
+    (meineAuswahl === "rock" && pcAuswahl === "paper") ||
+    (meineAuswahl === "paper" && pcAuswahl === "scissors") ||
+    (meineAuswahl === "scissors" && pcAuswahl === "rock")
   ) {
     result = "You loose";
     pcScore++;
     pcWinOutput.innerHTML = "Pc score : " + pcScore;
   } else if (
-    (meineAuswahl === "papier" && pcAuswahl === "stein") ||
-    (meineAuswahl === "scheere" && pcAuswahl === "papier") ||
-    (meineAuswahl === "stein" && pcAuswahl === "scheere")
+    (meineAuswahl === "paper" && pcAuswahl === "rock") ||
+    (meineAuswahl === "scissors" && pcAuswahl === "paper") ||
+    (meineAuswahl === "rock" && pcAuswahl === "scissors")
   ) {
     result = "You Win";
     myScore++;
@@ -75,9 +75,9 @@ function myplay(meineAuswahl) {
   } else {
     pcAuswahl.innerHTML = "scheere";
   } */
-  pcOutput.innerHTML = " Pc choose  : " + pcAuswahl;
+  pcOutput.innerHTML = " PC choose: " + pcAuswahl;
   spielerOutput.innerHTML = "You choose: " + meineAuswahl;
-  ergebnisOutput.innerHTML = "Result:" + result;
+  ergebnisOutput.innerHTML = "Result: " + result;
 
   console.log(spielerOutput);
   console.log(pcOutput);
