@@ -1,13 +1,15 @@
 //to do;
 // inputs definieren;
-//outputs : (1)spilerOutput ,(2)pcOutput ,(3)result;
+//outputs : (1)spielerOutput ,(2)pcOutput ,(3)result;
 //button: restart game;
 // variablen definieren und mit queryselektor ansprechen.
 
 const spielerOutput = document.querySelector(".userauswahl");
 const pcOutput = document.querySelector(".pcauswahl");
 const ergebnisOutput = document.querySelector(".ergebnis");
+
 const rundenOutput = document.querySelector(".rounds");
+
 const myWinOutput = document.querySelector(".mywin");
 const pcWinOutput = document.querySelector(".pcwin");
 let roundVAR = 0;
@@ -27,7 +29,9 @@ function myplay(meineAuswahl) {
   // pc soll eine random nummer bis 3;
   let pcAuswahl = Math.ceil(Math.random() * 3);
   let result = "";
+  //die runden sollen aufgezählt werden.
   roundVAR++;
+  //die runden sollen ins html gezeigt werden.
   rundenOutput.innerHTML = "Round : " + roundVAR;
 
   console.log(pcAuswahl);
@@ -42,7 +46,7 @@ function myplay(meineAuswahl) {
     pcAuswahl = "scheere";
     pcOutput.innerHTML = pcAuswahl;
   }
-
+  //::::::::://
   if (meineAuswahl === pcAuswahl) {
     result = "Draw";
   } else if (
