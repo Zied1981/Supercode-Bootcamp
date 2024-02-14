@@ -9,7 +9,7 @@ removeBtn.addEventListener("click", () => {
   //damit lass ich auslesen was der user ausgesucht hat.
   const index = selectColor.selectedIndex;
 
-  //damit erstelle ich ein virtueles array aus select-list- elemente
+  //damit erstelle ich ein virtuelles array aus select-list- elemente
   const options = selectColor.options;
 
   console.log(options);
