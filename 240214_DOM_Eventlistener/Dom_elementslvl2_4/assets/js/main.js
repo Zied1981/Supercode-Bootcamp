@@ -23,11 +23,12 @@ removeBtn.addEventListener("click", () => {
 
 // ! Variante 2
 
-//- const colorChangeButton = document.querySelector("#button"); <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<-- Variable mit dem Button verbinden
+//- const colorChangeButton = document.querySelector("#button"); <<<<<-- Variable mit dem Button verbinden
 
-//- colorChangeButton.addEventListener("click", () => {<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<-- auf den Button ein click EventListener
-//- const colorSelect = document.querySelector("#farbeAuswahlen").value;<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<-- Variable die , die farben als value ausliest
-//- document.querySelector("body").style.backgroundColor = colorSelect.replace(" ", "").toLowerCase();<<-- den body gestyled mit der variable die, die farben als value enthält und nurnoch den text bearbeitet. zB. mit replace die spaces entfert
+//- colorChangeButton.addEventListener("click", () => {<<<<<<<<<<<<<<<<<<<-- auf den Button ein click EventListener
+//- const colorSelect = document.querySelector("#farbeAuswahlen").value;<<<<<<<<<<<-- Variable die , die farben als value ausliest
+//- document.querySelector("body").style.backgroundColor = colorSelect.replace(" ", "").toLowerCase();<<-- den body gestyled mit der variable
+// die, die farben als value enthält und nurnoch den text bearbeitet. zB. mit replace die spaces entfert
 //- });
 
 // ##########################################################################
