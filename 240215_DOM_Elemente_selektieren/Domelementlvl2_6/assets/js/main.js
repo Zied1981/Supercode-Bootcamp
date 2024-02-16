@@ -222,8 +222,8 @@ container.appendChild(divTitle);
 container.appendChild(button);
 
 // divbox styling
-container.style.height = "200px";
-container.style.width = "200px";
+container.style.height = "210px";
+container.style.width = "210px";
 container.style.backgroundColor = "orange";
 container.style.color = "red";
 document.body.appendChild(container);
@@ -232,6 +232,7 @@ button.style.color = "white";
 button.style.border = "3px solid black";
 button.style.borderRadius = "20%";
 button.style.padding = "1vw";
+button.style.marginBottom = "4vw";
 
 /* Im internet gefunden:let randomImageIndex = Math.floor(Math.random() * object.length); */
 /* let randomImage = object[randomImageIndex].image;  */
@@ -250,6 +251,8 @@ button.addEventListener("click", () => {
 
   //hiermit wird ein img <tag> über js created.
   let bild = document.createElement("img");
+  bild.style.width = "100px";
+  bild.style.height = "100px";
   //hiermit wird die src und alternativ angepasst.
   bild.setAttribute("src", data[randomImageIndex].download_url);
   bild.setAttribute("alt", "zufallsbilder");
