@@ -91,7 +91,7 @@ tableContainerOutput.innerHTML = myFunction(singers);
 
 //das folgende nennt man :event handler function.
 const handleSearchClicked = () => {
-  /*   tableContainerOutput.innerHTML = ""; */
+  tableContainerOutput.innerHTML = "";
   let textInput = document.querySelector("#searchInput").value.toLowerCase();
   //   console.log(textInput);
 
@@ -102,6 +102,10 @@ const handleSearchClicked = () => {
   });
   console.log(filterResult);
   tableContainerOutput.innerHTML = myFunction(filterResult);
+  //errorhandling
+  filterResult.length <= 0
+    ? (tableContainerOutput.innerHTML = "Error, please try Again")
+    : myFunction(filterResult);
 };
 
 searchBtn.addEventListener("click", handleSearchClicked);
