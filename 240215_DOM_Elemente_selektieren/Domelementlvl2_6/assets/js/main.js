@@ -227,11 +227,11 @@ container.style.width = "200px";
 container.style.backgroundColor = "orange";
 container.style.color = "red";
 document.body.appendChild(container);
-container.appendChild(button).style.backgroundColor = "red";
-container.appendChild(button).style.color = "white";
-container.appendChild(button).style.border = "3px solid black";
-container.appendChild(button).style.borderRadius = "20%";
-container.appendChild(button).style.padding = "1vw";
+button.style.backgroundColor = "red";
+button.style.color = "white";
+button.style.border = "3px solid black";
+button.style.borderRadius = "20%";
+button.style.padding = "1vw";
 
 /* Im internet gefunden:let randomImageIndex = Math.floor(Math.random() * object.length); */
 /* let randomImage = object[randomImageIndex].image;  */
@@ -239,7 +239,9 @@ container.appendChild(button).style.padding = "1vw";
 console.log(data[0].download_url);
 const imgOutput = document.getElementById("content");
 
+let divBox = document.createElement("div");
 button.addEventListener("click", () => {
+  divBox.innerHTML = "";
   //hiermit generiere ich eine random index aus dem data array
   let randomImageIndex = Math.floor(Math.random() * data.length);
   console.log(randomImageIndex);
@@ -252,8 +254,8 @@ button.addEventListener("click", () => {
   bild.setAttribute("src", data[randomImageIndex].download_url);
   bild.setAttribute("alt", "zufallsbilder");
   //hiermit wird das bild ins html geschrieben;
-  document.body.appendChild(bild);
-  imgOutput.innerHTML = "";
+  container.appendChild(divBox);
+  divBox.appendChild(bild);
 
   //die bilder werden generiert aber nicht
   // ersetzt also muss die html geleert werden ganz oben in der func.
