@@ -74,13 +74,13 @@ function myFunction(parameter) {
    <tbody>`;
   parameter.forEach((reihe) => {
     tabelle += `
-                <tr>
-                    <td>${reihe.name}</td>
-                    <td>${reihe.country}</td>
-                    <td>${reihe.period_active.start} - ${reihe.period_active.end}</td>
-                    <td>${reihe.genre}</td>
-                </tr>
-                `;
+      <tr>
+        <td>${reihe.name}</td>
+          <td>${reihe.country}</td>
+          <td>${reihe.period_active.start} - ${reihe.period_active.end}</td>
+           <td>${reihe.genre}</td>
+       </tr>
+     `;
   });
 
   tabelle += ` </tbody>
@@ -111,3 +111,9 @@ const handleSearchClicked = () => {
 searchBtn.addEventListener("click", handleSearchClicked);
 // hiermit regesriere ich dem eventlistener auf dem Btn.
 //das folgende nennt man : event listener;
+searchBtn.style.backgroundColor = "red";
+searchBtn.style.color = "white";
+searchBtn.style.border = "3px solid white";
+searchBtn.style.borderRadius = "20px";
+searchBtn.style.padding = "1vw 3vw ";
+tableContainerOutput.style.backgroundColor = "aquamarine";
