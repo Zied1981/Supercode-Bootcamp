@@ -1,0 +1,6 @@
+.sec {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1vw;
+  margin: 0 2vw;
+}
