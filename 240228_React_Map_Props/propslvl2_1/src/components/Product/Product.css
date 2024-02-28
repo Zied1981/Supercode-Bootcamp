@@ -1,0 +1,10 @@
+.productsection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1vw;
+}
+/* .productsection img {
+  height: 100px;
+}
+ */
