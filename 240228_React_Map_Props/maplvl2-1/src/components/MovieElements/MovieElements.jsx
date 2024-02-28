@@ -1,3 +1,4 @@
+import Countingstars from "../Countingstars/Countingstars";
 import "./MovieElements.css";
 const MovieElements = (props) => {
   return (
@@ -7,7 +8,7 @@ const MovieElements = (props) => {
       <h2>{props.content.director}</h2>
       <p>{props.content.duration}</p>
 
-      <p>{props.content.rate}</p>
+      <Countingstars rate={props.content.rate} />
 
       {props.content.genre.map((typegenre, index) => (
         <p key={index}>{typegenre}</p>
