@@ -1,0 +1,37 @@
+.sec {
+  text-align: center;
+  padding-top: 4vw;
+  height: 100vh;
+  border-radius: 30px;
+}
+.sec button {
+  padding: 1vw;
+  border-radius: 20px;
+}
+
+.dark {
+  background-color: black;
+  color: white;
+  min-height: 60vh;
+  padding: 5vw 3vw;
+  border-radius: 30px;
+}
+.dark button {
+  padding: 2vw;
+  background-color: white;
+}
+.light {
+  background-color: gray;
+  min-height: 60vh;
+  padding: 5vw 3vw;
+  border-radius: 30px;
+}
+.light button {
+  background-color: black;
+  color: white;
+  padding: 2vw;
+  border-radius: 20px;
+}
+.sec h2 {
+  font-size: 40px;
+}
