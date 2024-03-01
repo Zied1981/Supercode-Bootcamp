@@ -1,16 +1,18 @@
 .counter {
+  background: url(../../../public/banana.webp) center no-repeat;
+  background-size: contain;
   background-color: rgb(27, 111, 184);
   max-width: 70vw;
   margin: auto;
   padding: 5vw;
   border-radius: 10px;
-  min-height: 60vh;
+  min-height: 70vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   margin-top: 10vw;
-  gap: 1vw;
+  gap: 7vw;
 }
 
 .output {
@@ -40,6 +42,7 @@
   padding: 2vw 4vw;
   border-radius: 20px;
   border-style: none;
+  background-color: #219ebc;
 }
 .btn {
   display: flex;

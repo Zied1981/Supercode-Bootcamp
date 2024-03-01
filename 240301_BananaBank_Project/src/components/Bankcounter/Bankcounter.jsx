@@ -4,14 +4,14 @@ const Bankcounter = () => {
   //imput einzahlbetrag;
   const [amount, SetAmount] = useState("");
   //kontostand
-  const [balance, setBalance] = useState(0);
+  const [balance, setBalance] = useState("");
   //func addieren
   const add = () => {
     setBalance(Number(amount + balance));
     console.log("yay");
     SetAmount("");
   };
-  // func
+  // func substraieren
   const sub = () => {
     amount <= balance
       ? setBalance(Number(balance - amount))
@@ -21,7 +21,7 @@ const Bankcounter = () => {
 
   return (
     <section className="counter">
-      <h1>Banana Bank</h1>
+      <h1>Blue Banana Bank</h1>
       <div>
         <h3>Mein Girokonto</h3>
         <p className="output">{balance}</p>
