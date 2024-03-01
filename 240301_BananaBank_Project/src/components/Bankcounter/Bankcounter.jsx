@@ -1,23 +1,46 @@
 import { useState } from "react";
 import "./Bankcounter.css";
+
 const Bankcounter = () => {
   //imput einzahlbetrag;
   const [amount, SetAmount] = useState("");
 
   //kontostand
-  const [balance, setBalance] = useState("");
+  const [balance, setBalance] = useState(0);
+  // für die warnung
+  const [warning, setWarning] = useState("");
 
   //func addieren
   const add = () => {
-    setBalance(Number(amount + balance));
+    if (amount < 0) {
+      setBalance(Number(balance + amount * -1));
+    } else {
+      setBalance(Number(balance + amount));
+    }
+
+    /*   setBalance(Number(amount + balance)); */
     console.log("yay");
     SetAmount("");
   };
   // func substraieren :wenn der amount beim abziehen kleiner oder gleich der balance.
   const sub = () => {
-    amount <= balance
-      ? setBalance(Number(balance - amount))
-      : window.alert("amount to be surrended ist bigger than your balance ");
+    setWarning("");
+    if (amount === 0 || amount.length === 0) {
+      setWarning("https://avatarfiles.alphacoders.com/217/217447.jpg");
+      return;
+    }
+    console.log("test");
+
+    if (amount < 0) {
+      setBalance(Number(balance - amount * -1));
+    } else {
+      setBalance(Number(balance - amount));
+    }
+
+    // amount <= balance
+    //   ? setBalance(Number(balance - amount))
+    //   : /* window.alert("amount to be surrended ist bigger than your balance "); */
+    //     setWarning("https://avatarfiles.alphacoders.com/217/217447.jpg");
 
     SetAmount("");
   };
@@ -25,23 +48,22 @@ const Bankcounter = () => {
   return (
     <section className="counter">
       <h1>Blue Banana Bank</h1>
-      <h3>Mein Girokonto</h3>
-      <div>
-        <p className="output">{balance}</p>
+      <h3>MY GiROKONTO</h3>
+      <p className="output">{balance}</p>
+      <img src={warning}></img>
 
-        <input
-          type="number"
-          placeholder=" Betrag in € "
-          id="number"
-          onChange={(event) => SetAmount(Number(event.target.value))}
-          value={amount}
-        />
+      <input
+        type="number"
+        placeholder=" Amount in € "
+        id="number"
+        min="0"
+        value={amount}
+        onChange={(event) => SetAmount(Number(event.target.value))}
+      />
 
-        <br />
-        <div className="btn">
-          <button onClick={add}>Einzahlen</button>
-          <button onClick={sub}>Auszahlen</button>
-        </div>
+      <div className="btn">
+        <button onClick={add}>Deposit</button>
+        <button onClick={sub}>Payoff</button>
       </div>
     </section>
   );

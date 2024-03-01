@@ -10,18 +10,18 @@
 
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   margin-top: 10vw;
+  gap: 10vw;
 }
 
 .output {
   border-radius: 20px;
-  padding: 6vw 8vw;
-
+  padding: 5vw 15vw;
   text-align: center;
   background-color: white;
-  max-width: inherit;
+
   margin-bottom: 5vw;
 }
 #number {
@@ -29,7 +29,7 @@
   border-style: none;
   margin-bottom: 3vw;
   background-color: white;
-  max-width: inherit;
+
   padding: 4.5vw 14vw;
   display: block;
 
@@ -42,6 +42,7 @@
 }
 .counter h1 {
   font-size: 40px;
+  text-shadow: 5px 5px 10px white;
 }
 h3 {
   font-size: 24px;
