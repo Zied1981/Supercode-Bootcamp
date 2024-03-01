@@ -1,33 +1,38 @@
 .counter {
-  background: url(../../../public/banana.webp) center no-repeat;
+  background: url(../../../public/img_170995_bluebanana_sm.jpg) center no-repeat;
   background-size: contain;
   background-color: rgb(27, 111, 184);
-  max-width: 70vw;
+  max-width: 90vw;
   margin: auto;
-  padding: 5vw;
+  padding: 1vw 4vw;
   border-radius: 10px;
-  min-height: 70vh;
+  min-height: 90svh;
+
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   margin-top: 10vw;
-  gap: 7vw;
 }
 
 .output {
   border-radius: 20px;
-  padding: 4vw 5vw;
+  padding: 6vw 8vw;
+
   text-align: center;
   background-color: white;
+  max-width: inherit;
+  margin-bottom: 5vw;
 }
-.counter input {
+#number {
   text-align: center;
   border-style: none;
   margin-bottom: 3vw;
   background-color: white;
+  max-width: inherit;
+  padding: 4.5vw 14vw;
+  display: block;
 
-  padding: 4vw 7vw;
   border-radius: 20px;
 }
 .counter h1,
@@ -38,13 +43,21 @@
 .counter h1 {
   font-size: 40px;
 }
+h3 {
+  font-size: 24px;
+}
 .counter button {
   padding: 2vw 4vw;
   border-radius: 20px;
   border-style: none;
-  background-color: #219ebc;
+  background-color: #ffffff;
+  color: #1b6fb8;
 }
 .btn {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 2vw;
+}
+p {
+  text-align: center;
 }
