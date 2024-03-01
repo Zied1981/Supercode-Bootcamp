@@ -6,12 +6,13 @@ const Bankcounter = () => {
   const [amount, SetAmount] = useState("");
 
   //kontostand
-  const [balance, setBalance] = useState(0);
+  const [balance, setBalance] = useState("");
   // für die warnung
   const [warning, setWarning] = useState("");
 
   //func addieren
   const add = () => {
+    setWarning("");
     if (amount < 0) {
       setBalance(Number(balance + amount * -1));
     } else {
@@ -37,10 +38,10 @@ const Bankcounter = () => {
       setBalance(Number(balance - amount));
     }
 
-    // amount <= balance
-    //   ? setBalance(Number(balance - amount))
-    //   : /* window.alert("amount to be surrended ist bigger than your balance "); */
-    //     setWarning("https://avatarfiles.alphacoders.com/217/217447.jpg");
+    amount <= balance
+      ? setBalance(Number(balance - amount))
+      : /* window.alert("amount to be surrended ist bigger than your balance "); */
+        setWarning("https://avatarfiles.alphacoders.com/217/217447.jpg");
 
     SetAmount("");
   };

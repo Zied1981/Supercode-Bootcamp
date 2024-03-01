@@ -13,7 +13,7 @@
   justify-content: center;
   align-items: center;
   margin-top: 10vw;
-  gap: 10vw;
+  gap: 8vw;
 }
 
 .output {
@@ -21,13 +21,15 @@
   padding: 5vw 15vw;
   text-align: center;
   background-color: white;
+  font-size: 20px;
+  font-weight: 600;
 
-  margin-bottom: 5vw;
+  margin-bottom: 10vw;
 }
 #number {
   text-align: center;
   border-style: none;
-  margin-bottom: 3vw;
+  margin-bottom: 5vw;
   background-color: white;
 
   padding: 4.5vw 14vw;
@@ -43,12 +45,13 @@
 .counter h1 {
   font-size: 40px;
   text-shadow: 5px 5px 10px white;
+  margin-bottom: 5vw;
 }
 h3 {
   font-size: 24px;
 }
 .counter button {
-  padding: 2vw 4vw;
+  padding: 2vw 8vw;
   border-radius: 20px;
   border-style: none;
   background-color: #ffffff;
@@ -57,8 +60,12 @@ h3 {
 .btn {
   display: flex;
   justify-content: center;
-  gap: 2vw;
+  gap: 7vw;
 }
 p {
   text-align: center;
+}
+img {
+  max-width: 25vw;
+  border-radius: 20px;
 }
