@@ -17,8 +17,7 @@ const Bankcounter = () => {
   const sub = () => {
     amount <= balance
       ? setBalance(Number(balance - amount))
-      : (src =
-          ""); /*  window.alert("amount to be surrended ist bigger than your balance "); */
+      : window.alert("amount to be surrended ist bigger than your balance ");
 
     SetAmount("");
   };
