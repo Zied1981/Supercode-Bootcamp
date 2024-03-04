@@ -1,0 +1,17 @@
+.plants img {
+  max-width: 80%;
+  height: 60vw;
+}
+.plants {
+  margin: auto;
+}
+.plantsdiv {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 4vw;
+}
+.plants p,
+.plants h5 {
+  margin-left: 4vw;
+}

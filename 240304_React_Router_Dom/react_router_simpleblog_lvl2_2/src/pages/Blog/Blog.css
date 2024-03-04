@@ -1,0 +1,24 @@
+.blogdiv {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1vw;
+}
+.blogdiv img {
+  height: 10px;
+  width: 550px;
+  border-radius: 20px;
+  margin-bottom: 1vw;
+}
+.blogdiv p {
+  margin-bottom: 2vw;
+}
+.blogdiv a {
+  border: 1px solid green;
+  padding: 1vw 2vw;
+  text-decoration: none;
+  border-radius: 10px;
+  background-color: white;
+  color: green;
+  display: inline-block;
+  margin-bottom: 2vw;
+}

@@ -1,0 +1,19 @@
+.homee {
+  background: url(../../../public/photo-1512295767273-ac109ac3acfa\ 1.png)
+    center no-repeat;
+  background-size: cover;
+  min-height: 60vw;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.homee a {
+  border: 1px solid green;
+  padding: 1vw 2vw;
+  text-decoration: none;
+  border-radius: 10px;
+  background-color: white;
+  color: green;
+}
