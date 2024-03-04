@@ -1,10 +1,8 @@
 import "./Todoitems.css";
 const Todoitems = (props) => {
-  return (
-    <ul>
-      <li>{props.singleitem}</li>
-    </ul>
-  );
+
+    
+  return <li>{props.singleitem}</li>;
 };
 
 export default Todoitems;
