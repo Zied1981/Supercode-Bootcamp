@@ -29,9 +29,9 @@ const Form = () => {
         />
       </div>
       <div>
-        <p>firstname : {firstname}</p>
-        <p>lastname : {lastname}</p>
-        <p>email : {email}</p>
+        <p>firstname :{firstname}</p>
+        <p>lastname :{lastname}</p>
+        <p>email :{email}</p>
       </div>
     </section>
   );
