@@ -1,0 +1,17 @@
+img {
+  width: 100%;
+  min-height: 50vw;
+}
+.socialmedia {
+  margin: auto;
+}
+.socialmediadiv {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 4vw;
+}
+.socialmedia p,
+.socialmedia h5 {
+  margin-left: 4vw;
+}

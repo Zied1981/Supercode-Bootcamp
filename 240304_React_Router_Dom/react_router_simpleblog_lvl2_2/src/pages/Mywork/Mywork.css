@@ -1,0 +1,17 @@
+img {
+  width: 100%;
+  min-height: 50vw;
+}
+.work {
+  margin: auto;
+}
+.workdiv {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 4vw;
+}
+.work p,
+.work h5 {
+  margin-left: 4vw;
+}

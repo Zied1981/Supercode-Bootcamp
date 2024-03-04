@@ -1,0 +1,17 @@
+img {
+  width: 100%;
+  min-height: 50vw;
+}
+.codinglife {
+  margin: auto;
+}
+.codinglifediv {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 4vw;
+}
+.codinglife p,
+.codinglife h5 {
+  margin-left: 4vw;
+}
