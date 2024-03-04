@@ -1,7 +1,7 @@
 .blogdiv {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 1vw;
+  gap: 2vw;
 }
 .blogdiv img {
   border-radius: 20px;

@@ -1,6 +1,6 @@
 import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Header from "./Header/Header";
+import Header from "./components/Header/Header";
 import Home from "./pages/Home/Home";
 import Blog from "./pages/Blog/Blog";
 import Mypets from "./pages/Mypets/Mypets";
