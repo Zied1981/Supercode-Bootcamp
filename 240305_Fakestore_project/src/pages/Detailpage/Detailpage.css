@@ -1,0 +1,8 @@
+.details_sec {
+  background-color: gray;
+}
+.detailsarticle a {
+  text-decoration: none;
+  display: block;
+  text-align: center;
+}

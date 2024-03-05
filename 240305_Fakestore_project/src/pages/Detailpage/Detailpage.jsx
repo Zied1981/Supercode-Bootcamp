@@ -26,8 +26,9 @@ const Detailpage = () => {
   return (
     <section className="details_sec">
       {detailsData ? (
-        <section className="details_sec">
+        <article className="detailsarticle">
           <Link to="/">back to home</Link>
+
           <div className="detailcont">
             <img src={detailsData.image} alt="" />
             <p>{detailsData.price}</p>
@@ -35,7 +36,7 @@ const Detailpage = () => {
 
           <p>{detailsData.title}</p>
           <p>{detailsData.description}</p>
-        </section>
+        </article>
       ) : (
         <p>laden...</p>
       )}
