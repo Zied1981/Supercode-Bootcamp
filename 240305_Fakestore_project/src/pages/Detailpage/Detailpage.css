@@ -1,8 +1,45 @@
 .details_sec {
-  background-color: gray;
+  background-color: rgb(24, 23, 23);
+  min-height: 100svh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
+
 .detailsarticle a {
   text-decoration: none;
   display: block;
   text-align: center;
+}
+.detailcont {
+  border: 1px solid white;
+  max-width: 60vw;
+  min-height: 350px;
+  background-color: white;
+  margin: 0 auto;
+  border-radius: 10px;
+  position: relative;
+  margin-bottom: 5vw;
+}
+
+.detailcont img {
+  height: 45vw;
+  width: 30vw;
+  display: block;
+  margin: auto;
+  padding: 4vw;
+}
+
+.detailsarticle h4,
+.detailsarticle p {
+  text-align: center;
+  color: white;
+}
+
+.detailcont p {
+  color: black;
+  position: absolute;
+  bottom: 1px;
+  right: 35px;
 }

@@ -31,10 +31,10 @@ const Detailpage = () => {
 
           <div className="detailcont">
             <img src={detailsData.image} alt="" />
-            <p>{detailsData.price}</p>
+            <p>€{detailsData.price}</p>
           </div>
 
-          <p>{detailsData.title}</p>
+          <h4>{detailsData.title}</h4>
           <p>{detailsData.description}</p>
         </article>
       ) : (

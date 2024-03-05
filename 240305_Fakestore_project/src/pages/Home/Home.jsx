@@ -3,9 +3,9 @@ import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
-    <section>
-      <h1>Willkommen im Shop</h1>
-      <Link to={"/fetchpage"}>zum shop</Link>
+    <section className="homesec">
+      <h1>WELCOME IN OUR SHOP</h1>
+      <Link to={"/fetchpage"}>Let's Go Shopping</Link>
     </section>
   );
 };

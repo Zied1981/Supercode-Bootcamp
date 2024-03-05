@@ -15,7 +15,7 @@ const Fetchpage = () => {
 
   return (
     <article className="fetcharticle">
-      <h2>willkommen</h2>
+      <h2>WELCOME</h2>
       <section className="product_container">
         {bigData ? (
           bigData.map((items, index) => (

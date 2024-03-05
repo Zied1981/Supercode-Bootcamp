@@ -1,0 +1,18 @@
+.homesec {
+  background: url(../../../public/photo-1481437156560-3205f6a55735.avif) center
+    no-repeat;
+  background-size: cover;
+  min-height: 100svh;
+}
+
+h1 {
+  text-align: center;
+  padding-top: 3vw;
+  font-size: 50px;
+}
+.homesec a {
+  text-decoration: none;
+  text-align: center;
+  display: block;
+  font-size: 35px;
+}
