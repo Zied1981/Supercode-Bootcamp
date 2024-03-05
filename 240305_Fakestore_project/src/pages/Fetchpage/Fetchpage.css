@@ -1,0 +1,28 @@
+h2 {
+  text-align: center;
+  color: white;
+}
+
+.product_container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1vw;
+  border-radius: 10px;
+}
+.kachel {
+  border: 1px solid gray;
+  border-radius: 10px;
+  border-style: none;
+  color: white;
+}
+.fetcharticle {
+  background-color: gray;
+  margin: auto;
+}
+.fetcharticle img {
+  height: 200px;
+}
+.fetcharticle a {
+  text-decoration: none;
+  color: blueviolet;
+}
