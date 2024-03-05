@@ -7,29 +7,31 @@ h2 {
 .product_container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 2vw;
+  gap: 3vw;
   border-radius: 10px;
 }
 .kachel {
   border: 1px solid gray;
-  border-radius: 10px;
+  border-radius: 20px;
   border-style: none;
   color: white;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: rgb(179, 153, 49);
 }
 .fetcharticle {
   background-color: rgb(12, 12, 12);
   margin: auto;
 }
 .fetcharticle img {
-  height: 25vw;
-  width: 45vw;
+  height: 30vw;
+  width: 40vw;
   border-radius: 10px;
 }
 .fetcharticle a {
   text-decoration: none;
   color: blueviolet;
+  font-weight: 900;
 }

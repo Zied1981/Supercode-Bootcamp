@@ -11,6 +11,12 @@
   text-decoration: none;
   display: block;
   text-align: center;
+  color: white;
+  margin-bottom: 3vw;
+  padding-top: 4vw;
+  font-weight: 800;
+  font-size: 22px;
+  cursor: pointer;
 }
 .detailcont {
   border: 1px solid white;
