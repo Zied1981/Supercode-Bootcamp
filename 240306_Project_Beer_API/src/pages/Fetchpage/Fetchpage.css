@@ -1,8 +1,11 @@
 .kachel {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
-  gap: 3vw;
+  gap: 1vw;
+  margin-bottom: 5vw;
+  padding: 2vw 5vw;
+  margin: 0 auto;
 }
 .infos {
   display: flex;

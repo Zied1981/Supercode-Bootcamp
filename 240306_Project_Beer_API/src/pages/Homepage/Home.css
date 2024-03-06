@@ -2,7 +2,7 @@
   background: url(../../../public/christin-hume-08tX2fsuSLg-unsplash.png) center
     no-repeat;
   background-size: cover;
-  min-height: 50svh;
+  min-height: 37svh;
   position: relative;
   max-width: 70vw;
   margin-bottom: 5vw;
@@ -18,18 +18,19 @@
   right: 0;
 
   text-decoration: none;
-
-  background-color: #ffca41;
+  background-color: #bf850f;
 }
+
 p {
   text-align: center;
   padding: 1vw 12vw;
+  font-weight: 700;
 }
 
 .randombeer {
   background: url(../../../public/Group\ 2.jpg) center no-repeat;
   background-size: cover;
-  min-height: 50svh;
+  min-height: 37svh;
   position: relative;
   max-width: 70vw;
   margin-bottom: 5vw;
@@ -45,7 +46,7 @@ p {
 
   text-decoration: none;
 
-  background-color: #ffca41;
+  background-color: #bf850f;
 }
 .randombeer p {
   color: white;

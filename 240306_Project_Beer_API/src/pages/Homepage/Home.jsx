@@ -23,6 +23,7 @@ const Home = () => {
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Justo, a,
         eleifend vitae varius venenatis.
       </p>
+      <hr></hr>
       <section className="randombeer">
         {randomData ? (
           <Link to={`/detailspage/${randomData._id}`}>Random Beer</Link>
