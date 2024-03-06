@@ -1,0 +1,52 @@
+.homeesec {
+  background: url(../../../public/christin-hume-08tX2fsuSLg-unsplash.png) center
+    no-repeat;
+  background-size: cover;
+  min-height: 50svh;
+  position: relative;
+  max-width: 70vw;
+  margin-bottom: 5vw;
+  margin: auto;
+}
+
+.homeesec a {
+  color: white;
+  font-size: 38px;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  right: 0;
+
+  text-decoration: none;
+
+  background-color: #ffca41;
+}
+p {
+  text-align: center;
+  padding: 1vw 12vw;
+}
+
+.randombeer {
+  background: url(../../../public/Group\ 2.jpg) center no-repeat;
+  background-size: cover;
+  min-height: 50svh;
+  position: relative;
+  max-width: 70vw;
+  margin-bottom: 5vw;
+  margin: auto;
+}
+.randombeer a {
+  color: white;
+  font-size: 38px;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  right: 0;
+
+  text-decoration: none;
+
+  background-color: #ffca41;
+}
+.randombeer p {
+  color: white;
+}

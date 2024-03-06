@@ -1,0 +1,21 @@
+.kachel {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3vw;
+}
+.infos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.kachel img {
+  max-width: 40vw;
+}
+.kachel a {
+  text-decoration: none;
+  background-color: rgb(211, 170, 35);
+  border-radius: 10px;
+  padding: 1vw 3vw;
+}
