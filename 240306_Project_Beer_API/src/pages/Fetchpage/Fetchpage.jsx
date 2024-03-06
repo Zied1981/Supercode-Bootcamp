@@ -36,7 +36,7 @@ const Fetchpage = () => {
           <p>loading...</p>
         )}
       </section>
-      <Navbar />;
+      <Navbar />
     </article>
   );
 };
