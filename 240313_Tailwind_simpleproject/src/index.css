@@ -5,3 +5,9 @@
 img {
   max-width: 100%;
 }
+@layer base {
+  input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+}
