@@ -19,6 +19,7 @@ Promise.all([randomFunc(2000), randomFunc(2000), randomFunc(2000)])
   });
 
 // das ist mit einem mal promises
+
 /* randomFunc(2000)
   .then((result) => {
     console.log(result);
