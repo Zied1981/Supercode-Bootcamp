@@ -14,7 +14,7 @@ const server = http.createServer((request, response) => {
     request.url === "/" || request.url === "/home"
       ? "./public/pages/home.html"
       : `./public${request.url}`;
-  //request.url= /images/kanne.png
+  //request.url= /images/kanne.png oder.  /pages/about.html usw...
 
   readFile(filePath)
     .then((dataBuffer) => {
