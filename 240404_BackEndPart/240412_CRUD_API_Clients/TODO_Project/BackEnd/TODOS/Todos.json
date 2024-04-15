@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "toDo_title": "Einkaufen",
+    "toDo_type": "expense",
+    "toDo_status": "todo"
+  },
+  {
+    "id": 2,
+    "toDo_title": "Haare Schneiden",
+    "toDo_type": "expense",
+    "toDo_status": "done"
+  },
+  {
+    "id": 3,
+    "toDo_title": "an der Todo_App weiterarbeiten",
+    "toDo_type": "coding",
+    "toDo_status": "pending"
+  },
+  {
+    "id": 4,
+    "toDo_title": "Kinderfahrrad kaufen",
+    "toDo_type": "expense",
+    "toDo_status": "pending"
+  },
+  {
+    "id": 5,
+    "toDo_title": "Sommerreifen montieren lassen",
+    "toDo_type": "expense",
+    "toDo_status": "pending"
+  },
+  {
+    "id": 6,
+    "toDo_title": "wir sind kings",
+    "toDo_type": "xx",
+    "toDo_status": "pending"
+  }
+]
