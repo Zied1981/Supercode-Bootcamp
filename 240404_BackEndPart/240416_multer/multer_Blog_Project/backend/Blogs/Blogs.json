@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "blog_title": "Fitness",
+    "blog_image": "bild1.jpg",
+    "blog_description": "was nötig ist um fit zu bleiben"
+  },
+  {
+    "id": 2,
+    "blog_title": "Ernährung",
+    "blog_image": "bild2.jpg",
+    "blog_description": "Diese Zutaten baucht man täglich um den bedarf an Vitamine zu decken "
+  },
+  {
+    "id": 3,
+    "blog_title": "Programmieren",
+    "blog_image": "bild3.jpg",
+    "blog_description": "um ein guter programmierer zu werden muss man täglich coden"
+  }
+]
