@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   const [data, setData] = useState([]);
@@ -14,12 +15,14 @@ const Home = () => {
       <div>
         <h1>Home</h1>
         {data.map((item, index) => (
-          <div className="home-container" key={index}>
-            <p>#{item.id}</p>
-            <p>{item.blog_title}</p>
-            <img src={"http://localhost:4000/" + item.blog_image} alt="" />
-            <p>{item.blog_description}</p>
-          </div>
+          <Link to={`/detail/${item.id}`}>
+            <div className="home-container" key={index}>
+              <p>#{item.id}</p>
+              <p>{item.blog_title}</p>
+              <img src={"http://localhost:4000/" + item.blog_image} alt="" />
+              <p>{item.blog_description}</p>
+            </div>
+          </Link>
         ))}
       </div>
     </>
