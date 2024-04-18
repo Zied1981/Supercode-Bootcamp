@@ -1,0 +1,58 @@
+[
+  {
+    "id": 1,
+    "name": "Hans",
+    "nachname": "Meier",
+    "email": "Hans@gmail.com",
+    "nachricht": "mein spitzname ist Hansi"
+  },
+  {
+    "id": 2,
+    "name": "Franz",
+    "nachname": "Beckenbauer",
+    "email": "Franz@aol.com",
+    "nachricht": "Ich bin im fussball der kaiser"
+  },
+  {
+    "id": 3,
+    "name": "Freddy",
+    "nachname": "Mercury",
+    "email": "Freddy@hotmail.com",
+    "nachricht": "ich habe die musik branche revolutioniert"
+  },
+  {
+    "id": 4,
+    "name": "Nico",
+    "nachname": "Santos",
+    "email": "ms@gmail.com",
+    "nachricht": "ich bin dies jahr bei the voice germany am bord"
+  },
+  {
+    "id": 5,
+    "name": "Zied",
+    "nachname": "Khemiri",
+    "email": "zkhemiri@gmail.com",
+    "nachricht": "hihi"
+  },
+  {
+    "id": 6,
+    "name": "Zied",
+    "nachname": "Khemiri",
+    "email": "zkhemiri@gmail.com",
+    "nachricht": "yay"
+  },
+  {
+    "id": 7,
+    "name": "Zied",
+    "nachname": "Khemiri",
+    "email": "zkhemiri@gmail.com",
+    "nachricht": "xxxxx"
+  },
+  {
+    "id": 8,
+    "name": "marco",
+    "nachname": "marco",
+    "email": "marco@gmx.de",
+    "nachricht": "hallihallo"
+  }
+]
