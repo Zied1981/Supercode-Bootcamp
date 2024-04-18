@@ -16,5 +16,41 @@
     "blog_title": "Programmieren",
     "blog_image": "bild3.jpg",
     "blog_description": "um ein guter programmierer zu werden muss man täglich coden"
+  },
+  {
+    "id": 7,
+    "blog_title": "aaa",
+    "blog_image": "12fdd7eb1075182b84df939096a791a7",
+    "blog_description": "aaq"
+  },
+  {
+    "id": 8,
+    "blog_title": "xx",
+    "blog_image": "d6985d1a660f7f46379f21479bca8fa7",
+    "blog_description": "paris"
+  },
+  {
+    "id": 9,
+    "blog_title": "aaa",
+    "blog_image": "f87ab0f5ca4cddd3fbc6970aff5d3a66",
+    "blog_description": "pfeil"
+  },
+  {
+    "id": 10,
+    "blog_title": "yay",
+    "blog_image": "d0c7695497133ca70f09394042073964",
+    "blog_description": "ayyyyyy"
+  },
+  {
+    "id": 11,
+    "blog_title": "freddy",
+    "blog_image": "610cef31f3506c404ed0477cbd951645",
+    "blog_description": "freddiiiiii"
+  },
+  {
+    "id": 12,
+    "blog_title": "sss",
+    "blog_image": "52a6b7fc7e000bf9891c45b008d185f2",
+    "blog_description": "möbel"
   }
 ]

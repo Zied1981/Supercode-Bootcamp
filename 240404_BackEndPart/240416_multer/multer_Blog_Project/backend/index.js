@@ -16,9 +16,10 @@ app.use((req, _, next) => {
 });
 
 app.use(express.json());
+
 const upload = multer({ dest: "./uploads" });
 
-app.get("/api/v1/Blogs", (_, res) => {
+app.get("/api/v1/blogs", (_, res) => {
   readBlogs()
     .then((blog) => res.status(200).json(blog))
     .catch((err) =>
@@ -26,7 +27,7 @@ app.get("/api/v1/Blogs", (_, res) => {
     );
 });
 
-app.get("/api/v1/Blogs/:id", (req, res) => {
+app.get("/api/v1/blogs/:id", (req, res) => {
   const blogId = req.params.id;
   readBlogs()
     .then((blog) => blog.find((t) => t.id.toString() === blogId))
@@ -36,7 +37,7 @@ app.get("/api/v1/Blogs/:id", (req, res) => {
     );
 });
 
-app.post("/api/v1/Blogs", (req, res) => {
+app.post("/api/v1/blogs", (req, res) => {
   readBlogs()
     .then((blog) => {
       let lastBlog;
@@ -59,11 +60,11 @@ app.post("/api/v1/Blogs", (req, res) => {
     );
 });
 
-app.post("/api/v1/files/upload", upload.single("Blog"), (req, res) => {
+app.post("/api/files/uploads", upload.single("Blog"), (req, res) => {
   console.log(req.body);
   console.log(req.file);
 
-  res.json({ fileName: req.file.filename });
+  res.json({ blog_image: req.file.filename });
 });
 
 const PORT = 4000;
