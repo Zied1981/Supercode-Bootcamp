@@ -1,0 +1,25 @@
+.add-sec {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1vw;
+}
+.add-sec input,
+.add-sec textarea {
+  width: 400px;
+}
+.add-sec input {
+  padding: 1vw 2vw;
+}
+.add-sec button {
+  width: 400px;
+  padding: 1vw;
+  margin-bottom: 3vw;
+}
+h1 {
+  color: white;
+  padding-top: 4vw;
+  margin-bottom: 2vw;
+  text-align: center;
+}

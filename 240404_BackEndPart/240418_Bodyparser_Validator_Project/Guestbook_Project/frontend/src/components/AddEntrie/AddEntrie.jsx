@@ -23,17 +23,17 @@ const AddEntrie = ({ setData }) => {
       .then((res) => res.json())
       .then((data) => {
         setData(data);
-        setFirstName("");
-        setLastName("");
-        setEmailInput("");
-        setTextInput("");
       })
       .catch((err) => console.log(err, "fehler im post "));
+    setFirstName("");
+    setLastName("");
+    setEmailInput("");
+    setTextInput("");
   };
 
   return (
-    <section>
-      <h1>Addpost</h1>
+    <section className="add-sec">
+      <h1>Entries</h1>
       <input
         type="text"
         placeholder="Enter Firstname"
@@ -52,14 +52,17 @@ const AddEntrie = ({ setData }) => {
         value={emailInput}
         onChange={(e) => setEmailInput(e.target.value)}
       />
-      <input
+      <textarea
         type="text"
         placeholder="Enter Message"
         cols="30"
         rows="10"
         value={textInput}
         onChange={(e) => setTextInput(e.target.value)}
-      />
+      >
+        {" "}
+      </textarea>
+
       <button onClick={addNewEntrie}>Submit</button>
     </section>
   );

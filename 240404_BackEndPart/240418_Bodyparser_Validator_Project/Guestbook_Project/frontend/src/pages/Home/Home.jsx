@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import Delete from "../../components/Delete/Delete";
 
 import AddEntrie from "../../components/AddEntrie/AddEntrie";
 import "./Home.css";
@@ -13,12 +14,12 @@ const Home = () => {
   }, []);
 
   return (
-    <section>
-      <h1>Home</h1>
-
+    <section className="home-sec">
       <AddEntrie setData={setData} />
       {data.map((item, index) => (
         <div key={index} className="home-container">
+          <Delete item={item} setData={setData} />
+
           <p>{item.name}</p>
 
           <a href="#">{item.email}</a>
