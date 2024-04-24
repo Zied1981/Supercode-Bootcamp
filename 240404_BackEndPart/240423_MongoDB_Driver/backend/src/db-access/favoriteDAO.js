@@ -1,5 +1,5 @@
 import { ObjectId } from "mongodb";
-import { getDb } from "./getDb";
+import { getDb } from "./getDb.js";
 
 // bei favorite brauchen wir eine add, delete und show favorite func.
 //

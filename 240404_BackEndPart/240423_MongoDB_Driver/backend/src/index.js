@@ -3,8 +3,12 @@ import morgan from "morgan";
 import { moviesDAO } from "./db-access/moviesDAO.js";
 import { ObjectId } from "mongodb";
 import { favoriteDAO } from "./db-access/favoriteDAO.js";
+import cors from "cors";
 
 const app = express();
+
+//app police
+app.use(cors());
 
 //logging middleware
 app.use(morgan("dev"));
