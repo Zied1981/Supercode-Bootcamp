@@ -23,7 +23,7 @@ const Home = () => {
 
       <article className="home-container">
         {movies?.map((singleMovie, index) => (
-          <Link to="/detailpage" key={index}>
+          <Link to={`detailpage/${singleMovie._id}`} key={index}>
             <div className="home-div">
               <h2>{singleMovie.title}</h2>
               <p>{singleMovie.year}</p>

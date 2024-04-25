@@ -3,35 +3,30 @@ import { useParams } from "react-router-dom";
 import { backendUrl } from "../../api/api";
 
 const Detailpage = () => {
-  const [movies, setMovies] = useState([]);
-  const { movieID } = useParams();
-  console.log(movies);
+  const [movie, setMovie] = useState();
+  const { id } = useParams();
+  console.log(movie);
 
   useEffect(() => {
-    const find = movies?.find((singleMovie) => singleMovie._id === movieID);
-    fetch(`${backendUrl}/api/v1/movies/${movieID}`)
+    /*  const find = movies?.find((singleMovie) => singleMovie._id === id); */
+    fetch(`${backendUrl}/api/v1/movies/${id}`)
       .then((res) => res.json())
-      .then((data) => setMovies(find))
+      .then((data) => setMovie(data))
       .catch((err) => {
         console.log(err);
       });
-  }, [movies]);
-  /* console.log(movies); */
+  }, [id]);
+  console.log(movie);
 
   return (
     <section>
       <h1>Detailpage</h1>
 
       <article className="detail-container">
-        {movies?.map((singleMovie, index) => (
-          <div key={index} className="detail-div">
-            <h2>{singleMovie?.title}</h2>
-            <p>{singleMovie?.year}</p>
-            <p>{singleMovie?.director}</p>
-            <p>{singleMovie?.runtime} min</p>
-            <p>{singleMovie?.plot}</p>
-          </div>
-        ))}
+        <p>{movie?.title}</p>
+        <p>{movie?.year}</p>
+        <p>{movie?.director}</p>
+        <p>{movie?.plot}</p>
       </article>
     </section>
   );
