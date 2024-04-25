@@ -22,13 +22,13 @@ const Home = () => {
       </Link>
 
       <article className="home-container">
-        {movies.map((singleMovie, index) => (
+        {movies?.map((singleMovie, index) => (
           <Link to="/detailpage" key={index}>
             <div className="home-div">
               <h2>{singleMovie.title}</h2>
               <p>{singleMovie.year}</p>
               <p>{singleMovie.director}</p>
-              <p>{singleMovie.imdb.rating}</p>
+              <p>{singleMovie.runtime} min</p>
             </div>
           </Link>
         ))}

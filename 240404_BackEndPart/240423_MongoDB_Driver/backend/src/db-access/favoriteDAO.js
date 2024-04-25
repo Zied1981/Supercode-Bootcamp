@@ -4,7 +4,7 @@ import { getDb } from "./getDb.js";
 // bei favorite brauchen wir eine add, delete und show favorite func.
 //
 
-function addFavorites(newFavorite) {
+function createFavorites(newFavorite) {
   return getDb()
     .then((db) => db.collection("favorites").insertOne(newFavorite))
     .then((result) =>
@@ -22,10 +22,19 @@ function deleteFavorites(id) {
 
 function showFavorites() {
   return getDb().then((db) => db.collection("favorites").find().toArray());
+
+  /*  .then((db) => db.map((id) => id.movieID))
+    .then((idsFavoriten) => Promise.all([getDb(), idsFavoriten]))
+    .then(([db, idsFavoriten]) =>
+      db
+        .collection("movieDetails")
+        .find({ _id: { $in: idsFavoriten } })
+        .toArray()
+    ); */
 }
 
 export const favoriteDAO = {
-  addFavorites,
+  createFavorites,
   deleteFavorites,
   showFavorites,
 };

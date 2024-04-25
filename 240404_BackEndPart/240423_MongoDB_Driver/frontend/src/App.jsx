@@ -6,13 +6,15 @@ import Home from "./pages/Home/Home";
 
 function App() {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/detailpage" element={<Detailpage />} />
-        <Route path="/addmoviepage" element={<AddMoviePage />} />
-      </Routes>
-    </BrowserRouter>
+    <section className="app-sec">
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/detailpage" element={<Detailpage />} />
+          <Route path="/addmoviepage" element={<AddMoviePage />} />
+        </Routes>
+      </BrowserRouter>
+    </section>
   );
 }
 

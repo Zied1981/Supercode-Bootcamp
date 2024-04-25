@@ -1,0 +1,10 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.app-sec {
+  background: url(../../../public/moviemagic\ 1.png) center no-repeat;
+  background-size: cover;
+  height: 100svh;
+}
