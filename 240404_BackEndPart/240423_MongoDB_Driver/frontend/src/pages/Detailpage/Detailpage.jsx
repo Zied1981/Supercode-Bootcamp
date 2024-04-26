@@ -1,11 +1,10 @@
 import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import { backendUrl } from "../../api/api";
 
 const Detailpage = () => {
   const [movie, setMovie] = useState();
   const { id } = useParams();
-  console.log(movie);
 
   useEffect(() => {
     /*  const find = movies?.find((singleMovie) => singleMovie._id === id); */
@@ -18,9 +17,16 @@ const Detailpage = () => {
   }, [id]);
   console.log(movie);
 
+  addToFavo = () => {};
+
   return (
     <section>
       <h1>Detailpage</h1>
+      <Link to="/favoritepage">
+        <button onClick={addToFavo}>Add to Favorite</button>
+      </Link>
+      <br />
+      <button>Edit Movie</button>
 
       <article className="detail-container">
         <p>{movie?.title}</p>
