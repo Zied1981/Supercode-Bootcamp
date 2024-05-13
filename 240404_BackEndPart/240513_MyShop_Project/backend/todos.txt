@@ -1,0 +1,10 @@
+MyShop APP //1 dashbord. //2 login
+1dashbord
+- neue produkte hinzufügen
+-bestehende produkte bearbeiten
+-bestllungen sehen=> (mit status: bearbeitet/ nicht bearbeitet)
+-top verkaufte produkte sehen
+-gesamte anzahl an product sehen
+-deployen
+-bonus. newsletter
+
