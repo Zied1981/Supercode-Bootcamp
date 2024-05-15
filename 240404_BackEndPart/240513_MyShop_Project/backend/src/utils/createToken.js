@@ -13,6 +13,16 @@ export function createToken(user, tokenType = "access") {
     iat: issuedAtSeconds,
     // exp: issuedAtSeconds + 1 * 60 * 60 // 1h (manuell)
   };
-  const token = jwt.sign(tokenPayload, jwtSecret, { expiresIn: "1h" });
+  /*  const token = jwt.sign(tokenPayload, jwtSecret, { expiresIn: "1h" }); */
+
+  const expiresIn =
+    {
+      access: "10min",
+      refresh: "2w",
+      // verifEmail: "1h" ...
+    }[tokenType] || "10min"; // access field values dynamically using value of tokenType
+
+  const token = jwt.sign(tokenPayload, jwtSecret, { expiresIn });
+
   return token;
 }

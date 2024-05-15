@@ -2,7 +2,7 @@ import { User } from "../../models/User.js";
 import { generateRandomSalt, hash } from "../../utils/hash.js";
 import { sendEmail } from "../../utils/sendEmail.js";
 import { generateRandomSixDigitCode } from "../../utils/sixDigitCode.js";
-import { userToView } from "../helpers.js";
+import { userToView } from "../userServices/helpers.js";
 
 export async function registerUser({ firstname, lastname, email, password }) {
   const foundUserWithEmail = await User.findOne({ email });
@@ -30,7 +30,7 @@ export async function registerUser({ firstname, lastname, email, password }) {
   return userToView(user);
 }
 async function sendEmailVerification(user) {
-  return sendEmail({
+  const result = await sendEmail({
     to: user.email,
     subject: "Welcome to myShop",
     text: `Hi ${user.firstname},
@@ -41,4 +41,5 @@ async function sendEmailVerification(user) {
   - Zied from myShop
   `,
   });
+  console.log(result);
 }
