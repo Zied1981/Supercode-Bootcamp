@@ -66,10 +66,16 @@ async function deleteUserCtrl(req, res) {
   }
 }
 
+async function logoutUserCtrl(req, res) {
+  req.session.refreshToken = null;
+  res.status(200).json({ result: { message: "you are now logged out" } });
+}
+
 export const UserController = {
   postRegisterUserCtrl,
   postLoginUserCtrl,
   postVerifyUserEmailCtrl,
   postRefreshTokenCtrl,
   deleteUserCtrl,
+  logoutUserCtrl,
 };

@@ -14,14 +14,26 @@ export async function doJwtAuth(req, res, next) {
   const [authType, tokenString] = req.headers.authorization.split(" ");
   if (authType !== "Bearer" || !tokenString) return _invalidAuth();
 
-  try {
-    const verifiedTokenClaims = jwt.verify(tokenString, jwtSecret); // Claims sind Behauptungen der TokenPayload
+  const verifyToken = createTokenVerifier(req, res, next);
+  verifyToken(tokenString, "access");
+}
 
-    req.authenticatedUserId = verifiedTokenClaims.sub; // verifiedTokenClaims = TokenPayload = { sub, type, iat, exp }
-    req.verifiedTokenClaims = verifiedTokenClaims; // extra für refresh token
-    next();
-  } catch (err) {
-    console.log(err);
-    return _invalidAuth();
-  }
+export async function validateRefreshTokenInCookieSession(req, res, next) {
+  if (!req.session.refreshToken) return _invalidAuth(res);
+  const verifyToken = createTokenVerifier(req, res, next);
+  verifyToken(req.session.refreshToken, "refresh");
+}
+
+try {
+  const verifiedTokenClaims = jwt.verify(tokenString, jwtSecret); // Claims sind Behauptungen der TokenPayload
+
+  if (verifiedTokenClaims.type !== expectType) return _invalidAuth(res);
+
+  req.authenticatedUserId = verifiedTokenClaims.sub; // verifiedTokenClaims = TokenPayload = { sub, type, iat, exp }
+  /*   req.verifiedTokenClaims = verifiedTokenClaims; // extra für refresh token */
+
+  next();
+} catch (err) {
+  console.log(err);
+  return _invalidAuth();
 }
